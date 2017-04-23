@@ -1,0 +1,26 @@
+Maintenance
+
+Here are some instructions about maintaining this package.
+
+Periodically update the base version of `checklink` from
+http://search.cpan.org/dist/W3C-LinkChecker/ .  Use and update the diff
+file in this repository.
+
+Periodically browse to each URL in `checklink-args.txt` and remove any that
+are not valid.  Executing the following forms in Emacs, one at a time, will
+open sets of URLs in your browser.  It avoids opening all of the URLs in
+one go, which might overpower your browser.
+
+  (defun browse-url-checklink (number-prefix)
+    (find-file "../bin/checklink-args.txt")
+    (goto-char (point-min))
+    (browse-url-once-if-matched (concat number-prefix ":\\(http.*\\)") 1))
+  (browse-url-checklink "0")
+  (browse-url-checklink "1")
+  (browse-url-checklink "2")
+  (browse-url-checklink "3")
+  (browse-url-checklink "4")
+  (browse-url-checklink "5")
+  (browse-url-checklink "6")
+  ;; Just in case the above searches missed something.
+  (browse-url-checklink "[^0-6]")
