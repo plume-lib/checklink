@@ -51,4 +51,5 @@ times, and it only reports errors that occurred every time.
 
 There is more
 [documentation](https://raw.githubusercontent.com/plume-lib/checklink/master/checklink-persistent-errors)
-at the top of file.
+at the top of file, including examples of commands you could put in your
+crontab to run the link checker periodically.
