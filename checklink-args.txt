@@ -115,6 +115,7 @@
 --suppress-broken 405:http://www.amazon.com/exec/obidos/tg/detail/-/0321205758/103-2932545-5299831?v=glance
 --suppress-broken 405:http://www.edwardxwu.com/
 --suppress-broken 405:http://www.kivancmuslu.com/
+--suppress-broken 405:https://camelcamelcamel.com/	
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
 --suppress-broken 405:https://www.linkedin.com/in/steve-anton-944aa36b
