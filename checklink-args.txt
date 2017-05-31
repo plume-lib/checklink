@@ -108,11 +108,11 @@
 --suppress-broken 404:https://calendar.google.com/calendar/embed?src=mernst%40cs.washington.edu&title=Michael%20Ernst&mode=WEEK
 --suppress-broken 404:https://www.google.com/calendar/embed?mode=WEEK&src=mernst%40cs.washington.edu&ctz=America/Los_Angeles
 --suppress-broken 404:https://www.happycow.net/north_america/usa/washington/seattle/
---suppress-broken 405:http://dx.doi.org/10.1109/WODA.2007.3
---suppress-broken 405:http://ieeexplore.ieee.org/document/4273458/?reload=true&arnumber=4273458
 --suppress-broken 405:http://aws.amazon.com/datasets
 --suppress-broken 405:http://code.activestate.com/recipes/langs/python/
 --suppress-broken 405:http://developer.android.com/tools/building/plugin-for-gradle.html
+--suppress-broken 405:http://dx.doi.org/10.1109/WODA.2007.3
+--suppress-broken 405:http://ieeexplore.ieee.org/document/4273458/?reload=true&arnumber=4273458
 --suppress-broken 405:http://onlinelibrary.wiley.com/doi/10.1111/j.1468-0475.2011.00542.x/pdf
 --suppress-broken 405:http://www.amazon.com/exec/obidos/tg/detail/-/0321205758/103-2932545-5299831?v=glance
 --suppress-broken 405:http://www.edwardxwu.com/
@@ -120,6 +120,7 @@
 --suppress-broken 405:https://camelcamelcamel.com/	
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
+--suppress-broken 405:https://www.linkedin.com/in/joewhaley
 --suppress-broken 405:https://www.linkedin.com/in/steve-anton-944aa36b
 --suppress-broken 406:http://kevinjsullivan.org/
 --suppress-broken 406:http://spinroot.com/spin/Workshops/ws03/GroceVisser.pdf
