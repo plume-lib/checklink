@@ -54,6 +54,9 @@
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v3.1.2/randoop-3.1.2.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v3.1.4/randoop-3.1.4.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v3.1.5/randoop-3.1.5.zip
+--suppress-broken 302:https://norfolk.cs.washington.edu/mycse	
+--suppress-broken 302:https://ugradnews.cs.washington.edu/category/research/
+--suppress-broken 302:https://www.cs.washington.edu/internal/	
 --suppress-broken 302:https://www.mpi-sws.org/~roseh/JobSearch.html
 # 303 errors may belong in the --suppress-redirect section rather than here
 --suppress-broken 303:http://dx.doi.org/10.1109/WODA.2007.3
@@ -172,6 +175,9 @@
 --suppress-broken 501:https://web.mit.edu/21.guide/www/toc.htm
 --suppress-broken 501:webcal://courses.cs.washington.edu/courses/cse403/16wi/calendar.ics
 --suppress-broken 502:http://www.linkedin.com/pub/ittai-balaban/4/213/b85
+--suppress-broken 502:https://norfolk.cs.washington.edu/mycse	
+--suppress-broken 502:https://ugradnews.cs.washington.edu/category/research/
+--suppress-broken 502:https://www.cs.washington.edu/internal/	
 --suppress-broken 502:https://www.linkedin.com/pub/hao-lu/77/41/867
 --suppress-broken 503:http://www.census.gov/popest/data/cities/totals/2009/files/SUB-EST2009_ALL.csv
 --suppress-broken 503:http://www.marriott.com/hotels/travel/boscb-boston-marriott
