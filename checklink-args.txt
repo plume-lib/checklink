@@ -32,6 +32,7 @@
 --exclude-docs https://courses.cs.washington.edu/courses/cse599e1/16au/csenetid/
 
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
+--suppress-broken 301:http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37
 --suppress-broken 301:http://www.cs.virginia.edu/~sullivan/
 --suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
 --suppress-broken 301:http://www.nwfolklife.org/festival/
@@ -296,6 +297,7 @@
 --suppress-redirect http://2006.ecoop.org/->http://www.emn.fr/x-info/ecoop2006/
 --suppress-redirect http://cascade.org/->http://cascade.org/Home/
 --suppress-redirect http://defects4j.org/->https://github.com/rjust/defects4j
+--suppress-redirect http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37->http://www.computer.org/csdl/proceedings/icsm/2005/2368/00/23680401-abs.html	
 --suppress-redirect http://doi.ieeecomputersociety.org/10.1109/TSE.2006.90->http://www.computer.org/csdl/trans/ts/2006/09/e0718-abs.html
 --suppress-redirect http://download.java.net/jdk7/binaries/->http://dlc.sun.com.edgesuite.net/jdk7/binaries/index.html
 --suppress-redirect http://dx.doi.org/10.1007/s10515-006-0002-0->http://link.springer.com/article/10.1007%2Fs10515-006-0002-0
