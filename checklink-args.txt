@@ -235,8 +235,8 @@
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/daikon/dfepl.html#dfepl
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Compiling-Daikon.html#Compiling-Daikon
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Dataflow-hierarchy.html#Dataflow-hierarchy
---suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Declarations.html#Declarations
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Declaration-version.html#Declaration-version
+--suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Declarations.html#Declarations
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Instrumenting-C-programs.html#Instrumenting-C-programs
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/ListImplementors-declaration.html#ListImplementors-declaration
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/New-formatting-for-invariants.html#New-formatting-for-invariants
@@ -245,6 +245,8 @@
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Nonsensical-values.html#Nonsensical-values
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Program-point-declarations.html#Program-point-declarations
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Reading-dtrace-files.html#Reading-dtrace-files
+--suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Requirements-for-compiling-Daikon.html#Requirements-for-compiling-Daikon
+--suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Requirements-for-compiling-Kvasir.html#Requirements-for-compiling-Kvasir
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Track-logging.html#Track-logging
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Variable-comparability.html#Variable-comparability
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Variable-declarations.html#Variable-declarations
@@ -264,8 +266,8 @@
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/daikon/dfepl.html#dfepl
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Compiling-Daikon.html#Compiling-Daikon
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Dataflow-hierarchy.html#Dataflow-hierarchy
---suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Declarations.html#Declarations
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Declaration-version.html#Declaration-version
+--suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Declarations.html#Declarations
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Instrumenting-C-programs.html#Instrumenting-C-programs
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/ListImplementors-declaration.html#ListImplementors-declaration
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/New-formatting-for-invariants.html#New-formatting-for-invariants
@@ -274,6 +276,8 @@
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Nonsensical-values.html#Nonsensical-values
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Program-point-declarations.html#Program-point-declarations
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Reading-dtrace-files.html#Reading-dtrace-files
+--suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Requirements-for-compiling-Daikon.html#Requirements-for-compiling-Daikon
+--suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Requirements-for-compiling-Kvasir.html#Requirements-for-compiling-Kvasir
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Track-logging.html#Track-logging
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Variable-comparability.html#Variable-comparability
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Variable-declarations.html#Variable-declarations
