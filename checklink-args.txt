@@ -14,7 +14,7 @@
 --exclude-docs bugzilla/
 --exclude-docs daikon/download/api
 # An archived copy of a since-removed document, which contains broken links.
---exclude-docs http://homes.cs.washington.edu/~mernst/advice/agre-networking-on-the-network-20050814.html
+--exclude-docs https://homes.cs.washington.edu/~mernst/advice/agre-networking-on-the-network-20050814.html
 --exclude-docs http://types.cs.washington.edu/checker-framework/jdk-api/(javac|jdk)/
 # Old releases contain numerous broken links that are fixed in the current release
 --exclude-docs https://checkerframework.org/dev/jsr308/releases/
@@ -72,7 +72,7 @@
 --suppress-broken 403:http://www.darpa.mil/
 --suppress-broken 403:http://gradle.org/
 --suppress-broken 403:https://gradle.org/
---suppress-broken 403:http://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
+--suppress-broken 403:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 403:http://metro.kingcounty.gov/schedules/
 --suppress-broken 403:http://portal.acm.org/dl.cfm
 # Requires UW CSE credentials
@@ -332,7 +332,7 @@
 --suppress-redirect http://sites.google.com/site/scatherinehowell/Home/CV2008.pdf->http://sites.google.com/site/scatherinehowell/Home/CV2008.pdf?attredirects=0
 --suppress-redirect http://student.mit.edu/catalog/index.cgi->http://student.mit.edu/@8178100.17571/catalog/index.cgi
 --suppress-redirect http://texi2html.cvshome.org/->http://ximbiot.com/cvs/
---suppress-redirect http://tinyurl.com/dataprogramming->http://homes.cs.washington.edu/~mernst/teaching/data-programming/
+--suppress-redirect http://tinyurl.com/dataprogramming->https://homes.cs.washington.edu/~mernst/teaching/data-programming/
 --suppress-redirect http://www.a1trails.com/xc_ski/xc_ma.html->http://www.a1trails.com/home/nospiders.html
 --suppress-redirect http://www.a1trails.com/xc_ski/xc_nh.html->http://www.a1trails.com/home/nospiders.html
 --suppress-redirect http://www.amtrak.com/->http://www.amtrak.com/servlet/ContentServer?pagename=Amtrak/HomePage
