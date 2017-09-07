@@ -71,6 +71,8 @@
 # --suppress-broken 303:http://www.nytimes.com/2011/04/03/business/03stream.html
 # --suppress-broken 303:http://www.nytimes.com/2011/09/30/science/30twitter.html
 --suppress-broken 400:http://www.computer.org/web/tse
+--suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/tellina.pdf
+--suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/nl-pl.pdf	
 --suppress-broken 401:https://developer.apple.com/search/index.php?q=java
 --suppress-broken 403:http://www.darpa.mil/
 --suppress-broken 403:http://gradle.org/
