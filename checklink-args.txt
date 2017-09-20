@@ -133,7 +133,7 @@
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
 --suppress-broken 405:https://www.linkedin.com/in/joewhaley
 --suppress-broken 405:https://www.linkedin.com/in/steve-anton-944aa36b
---suppress-broken 495:https://www.linkedin.com/in/manos-renieris-99b5531
+--suppress-broken 405:https://www.linkedin.com/in/manos-renieris-99b5531
 --suppress-broken 406:http://kevinjsullivan.org/
 --suppress-broken 406:http://spinroot.com/spin/Workshops/ws03/GroceVisser.pdf
 --suppress-broken 406:http://www.artscrush.org/
