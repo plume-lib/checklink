@@ -64,13 +64,13 @@
 --suppress-broken 302:https://www.cs.washington.edu/internal/calendars/
 --suppress-broken 302:https://www.mpi-sws.org/~roseh/JobSearch.html
 # 303 errors belong in the --suppress-redirect section.
-# They do not need to be listed here!
-# --suppress-broken 303:http://dx.doi.org/10.1007/s10515-006-0002-0
-# --suppress-broken 303:http://dx.doi.org/10.1109/WODA.2007.3
-# --suppress-broken 303:http://hdl.handle.net/2142/54893
-# --suppress-broken 303:http://hdl.handle.net/2429/46122
-# --suppress-broken 303:http://www.nytimes.com/2011/04/03/business/03stream.html
-# --suppress-broken 303:http://www.nytimes.com/2011/09/30/science/30twitter.html
+# It seems they need to be listed here too...
+--suppress-broken 303:http://dx.doi.org/10.1007/s10515-006-0002-0
+--suppress-broken 303:http://dx.doi.org/10.1109/WODA.2007.3
+--suppress-broken 303:http://hdl.handle.net/2142/54893
+--suppress-broken 303:http://hdl.handle.net/2429/46122
+--suppress-broken 303:http://www.nytimes.com/2011/04/03/business/03stream.html
+--suppress-broken 303:http://www.nytimes.com/2011/09/30/science/30twitter.html
 --suppress-broken 400:http://www.computer.org/web/tse
 --suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/tellina.pdf
 --suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/nl-pl.pdf
