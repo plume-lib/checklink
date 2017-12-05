@@ -142,6 +142,7 @@
 --suppress-broken 406:http://www.cra.org/resources/bp-view/evaluating_computer_scientists_and_engineers_for_promotion_and_tenure/
 --suppress-broken 406:http://www.ijcai.org/past/ijcai-97/
 --suppress-broken 406:http://www.nwfolklife.org/festival/
+--suppress-broken 406:https://www.nwfolklife.org/festival/
 --suppress-broken 412:http://validator.w3.org/check?uri=referer
 --suppress-broken 416:http://www.switchboard.com/
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
@@ -207,6 +208,7 @@
 --suppress-broken 503:https://blogs.oracle.com/jrose/entry/notes_on_an_architecture_for
 --suppress-broken 503:https://www.expedia.com/
 --suppress-broken 503:https://www.microsoft.com/mspress/books/770.aspx
+--suppress-broken 503:https://www.orbitz.com/
 
 ## Temporary:
 --suppress-fragment https://checkerframework.org/manual/#index-checker
