@@ -74,6 +74,7 @@
 --suppress-broken 400:http://www.computer.org/web/tse
 --suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/nl-pl.pdf
 --suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/tellina.pdf
+--suppress-broken 400:https://ugradnews.cs.washington.edu/category/research/	
 --suppress-broken 400:https://www.cs.washington.edu/internal/
 --suppress-broken 400:https://www.cs.washington.edu/internal/calendars/
 --suppress-broken 401:https://developer.apple.com/search/index.php?q=java
