@@ -173,6 +173,7 @@
 --suppress-broken 500:https://hkn.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
+--suppress-broken 500:https://sourceforge.net/projects/tide/
 --suppress-broken 500:https://support.apple.com/kb/ph11523?locale=en_US
 --suppress-broken 500:https://sttt.cs.uni-dortmund.de/
 --suppress-broken 500:https://ugradnews.cs.washington.edu/category/research/
