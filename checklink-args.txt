@@ -104,6 +104,7 @@
 --suppress-broken 403:https://galois.com/team/joe-kiniry/
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v3.0.8/randoop-3.0.8.zip
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v3.1.5/randoop-3.1.5.zip
+--suppress-broken 403:https://javaparser.org/	
 --suppress-broken 403:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 403:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
