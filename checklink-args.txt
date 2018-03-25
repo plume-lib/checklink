@@ -149,6 +149,7 @@
 --suppress-broken 406:http://www.ijcai.org/past/ijcai-97/
 --suppress-broken 406:http://www.nwfolklife.org/festival/
 --suppress-broken 406:https://www.nwfolklife.org/festival/
+--suppress-broken 409:https://tips.seebrock3r.me/annotations-to-support-your-contracts-609ff259d5df
 --suppress-broken 412:http://validator.w3.org/check?uri=referer
 --suppress-broken 416:http://www.switchboard.com/
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
