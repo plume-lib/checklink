@@ -58,7 +58,7 @@
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v3.1.4/randoop-3.1.4.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v3.1.5/randoop-3.1.5.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.0/randoop-4.0.0.zip
---suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.0/randoop-4.0.1.zip
+--suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.1/randoop-4.0.1.zip
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 302:https://ugradnews.cs.washington.edu/category/research/
