@@ -62,6 +62,7 @@
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.1/randoop-4.0.1.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.2/randoop-4.0.2.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.3/randoop-4.0.3.zip
+# put Randoop URLs in 403 section as well
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 302:https://ugradnews.cs.washington.edu/category/research/
@@ -108,6 +109,7 @@
 --suppress-broken 403:https://galois.com/team/joe-kiniry/
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v3.0.8/randoop-3.0.8.zip
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v3.1.5/randoop-3.1.5.zip
+--suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.0.3/randoop-4.0.3.zip
 --suppress-broken 403:https://javaparser.org/	
 --suppress-broken 403:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 403:https://ugradnews.cs.washington.edu/category/research/
