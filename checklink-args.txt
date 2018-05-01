@@ -116,6 +116,7 @@
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
 --suppress-broken 403:https://www.dwheeler.com/sloccount/
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
+--suppress-broken 403:https://www.mysimon.com/
 # These 4 URLs require UW CSE credentials
 --suppress-broken 403:https://www.cs.washington.edu/internal/
 --suppress-broken 403:https://www.cs.washington.edu/lab/local/course-resources/cubist/
