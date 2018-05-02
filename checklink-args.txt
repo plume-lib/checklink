@@ -121,7 +121,7 @@
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
 --suppress-broken 403:https://www.dwheeler.com/sloccount/
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
-#--suppress-broken 404:file://afs/csail/group/pag/software/pkg/freshmeat-submit-1.6/freshmeat-submit.html
+--suppress-broken 403:https://www.mysimon.com/
 --suppress-broken 404:http://parks.state.wa.us/459/Blewett-I-90
 --suppress-broken 404:http://www.google.com/calendar/hosted/cs.washington.edu/embed?title=Michael%20Ernst&showPrint=0&mode=WEEK&height=600&wkst=1&bgcolor=%23FFFFFF&src=mernst%40cs.washington.edu&color=%23A32929&ctz=America%2FLos_Angeles
 --suppress-broken 404:http://www.juliasoft.com/
