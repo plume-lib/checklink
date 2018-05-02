@@ -20,7 +20,7 @@ take hours instead of seconds to run.
 
 This is a set of command-line arguments to the checklink program, that
 suppress spurious warnings and thus make the output easier to scan for real
-problems.  Run <tt>checklink</tt> like this:
+problems.  Run `checklink` like this:
 
 ```
    checklink -q -r `grep -v '^#' checklink-args.txt` MYURL
@@ -53,3 +53,8 @@ There is more
 [documentation](https://raw.githubusercontent.com/plume-lib/checklink/master/checklink-persistent-errors)
 at the top of file, including examples of commands you could put in your
 crontab to run the link checker periodically.
+
+
+# Installation
+
+You need to have CSS/DOM.pm installed (get it from CPAN).
