@@ -62,6 +62,7 @@
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.1/randoop-4.0.1.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.2/randoop-4.0.2.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.3/randoop-4.0.3.zip
+--suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.0.4/randoop-4.0.4.zip
 # put Randoop URLs in 403 section as well
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
