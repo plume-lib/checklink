@@ -126,6 +126,14 @@
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
 --suppress-broken 403:https://www.mysimon.com/
 --suppress-broken 404:http://parks.state.wa.us/459/Blewett-I-90
+--suppress-broken 404:http://plumelib.org/bcel-util/api/resources/fonts/dejavu.css	
+--suppress-broken 404:http://plumelib.org/lookup/api/resources/fonts/dejavu.css	
+--suppress-broken 404:http://plumelib.org/multiversioncontrol/api/resources/fonts/dejavu.css	
+--suppress-broken 404:http://plumelib.org/options/api/resources/fonts/dejavu.css	
+--suppress-broken 404:http://plumelib.org/plume-util/api/resources/fonts/dejavu.css	
+--suppress-broken 404:http://plumelib.org/plume-util/guide/collections/index.html	
+--suppress-broken 404:http://plumelib.org/reflection-util/api/resources/fonts/dejavu.css	
+--suppress-broken 404:http://plumelib.org/require-javadoc/api/resources/fonts/dejavu.css	
 --suppress-broken 404:http://www.google.com/calendar/hosted/cs.washington.edu/embed?title=Michael%20Ernst&showPrint=0&mode=WEEK&height=600&wkst=1&bgcolor=%23FFFFFF&src=mernst%40cs.washington.edu&color=%23A32929&ctz=America%2FLos_Angeles
 --suppress-broken 404:http://www.juliasoft.com/
 --suppress-broken 404:http://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
