@@ -98,6 +98,7 @@
 --suppress-broken 403:https://www.cs.washington.edu/login/pc
 # General 403 section
 --suppress-broken 403:http://gradle.org/
+--suppress-broken 403:http://jet.com/
 --suppress-broken 403:http://metro.kingcounty.gov/schedules/
 --suppress-broken 403:http://portal.acm.org/dl.cfm
 --suppress-broken 403:http://validator.w3.org/check?uri=referer
