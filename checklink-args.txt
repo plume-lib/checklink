@@ -243,10 +243,6 @@
 --suppress-broken 503:https://www.microsoft.com/mspress/books/770.aspx
 --suppress-broken 503:https://www.orbitz.com/
 
-## Temporary:
---suppress-fragment https://checkerframework.org/manual/#index-checker
---suppress-fragment https://checkerframework.org/manual/#index-substringindex
-
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.checkerframework%22
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Corg.checkerframework
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Crandoop
