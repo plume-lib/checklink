@@ -246,11 +246,12 @@
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.checkerframework%22
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Corg.checkerframework
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Crandoop
---suppress-fragment http://www.washington.edu/maps/#!/low
 --suppress-fragment http://www.washington.edu/maps/#!/cdh
+--suppress-fragment http://www.washington.edu/maps/#!/low
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=124498177728201
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&appId=124498177728201
 --suppress-fragment https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A
+--suppress-fragment https://gitlab.cs.washington.edu/help/ssh/README#generating-a-new-ssh-key-pair
 --suppress-fragment https://groups.google.com/a/cs.washington.edu/forum/#!forum/cse403-18sp-discussion
 --suppress-fragment https://groups.google.com/forum/#!forum/checker-framework-dev
 --suppress-fragment https://groups.google.com/forum/#!forum/checker-framework-dev/topics
