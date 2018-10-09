@@ -98,7 +98,6 @@
 --suppress-broken 403:https://www.cs.washington.edu/login/pc
 # General 403 section
 --suppress-broken 403:http://gradle.org/
---suppress-broken 403:http://jet.com/
 --suppress-broken 403:http://metro.kingcounty.gov/schedules/
 --suppress-broken 403:http://portal.acm.org/dl.cfm
 --suppress-broken 403:http://validator.w3.org/check?uri=referer
@@ -121,9 +120,11 @@
 --suppress-broken 403:https://gradle.org/
 --suppress-broken 403:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 403:https://javaparser.org/	
+--suppress-broken 403:https://jet.com
 --suppress-broken 403:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 403:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
+--suppress-broken 403:https://www.addresses.com/phone
 --suppress-broken 403:https://www.dwheeler.com/sloccount/
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
 --suppress-broken 403:https://www.mysimon.com/
@@ -173,12 +174,19 @@
 --suppress-broken 409:https://tips.seebrock3r.me/annotations-to-support-your-contracts-609ff259d5df
 --suppress-broken 412:http://validator.w3.org/check?uri=referer
 --suppress-broken 416:http://www.switchboard.com/
---suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
---suppress-broken 500:http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-with-j2se50.htm
---suppress-broken 500:http://jcp.org/en/jsr/detail?id=308
 --suppress-broken 500:http://junit.org/
 # kevinjsullivan.org goes down a lot; it's not worth getting notified about.
 --suppress-broken 500:http://kevinjsullivan.org/
+# w3.org delays responses dramatically
+--suppress-broken 500:http://www.w3.org/TR/html4/loose.dtd
+# https://web.mit.edu/21.guide/www requires a client certificate
+--suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-ob.htm
+--suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-wr.htm
+--suppress-broken 500:https://web.mit.edu/21.guide/www/toc.htm
+# General 500 section
+--suppress-broken 500:http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-with-j2se50.htm
+--suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
+--suppress-broken 500:http://jcp.org/en/jsr/detail?id=308
 --suppress-broken 500:http://www.eclipse.org/
 --suppress-broken 500:http://www.eclipse.org/documentation/
 --suppress-broken 500:http://www.eclipse.org/downloads/
@@ -189,25 +197,19 @@
 --suppress-broken 500:http://www.icse-conferences.org/2004/
 --suppress-broken 500:http://www.icse-conferences.org/2005/Home/
 --suppress-broken 500:http://www.orbitz.com/
---suppress-broken 500:https://www.portlandjugglers.org/
-# w3.org delays responses dramatically
---suppress-broken 500:http://www.w3.org/TR/html4/loose.dtd
 --suppress-broken 500:http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
 --suppress-broken 500:https://blog.techhit.com/551102-how-to-prevent-outlook-from-adding-line-breaks-to-sent-plain-text-messages
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_Spring_2014
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
+--suppress-broken 500:https://dblp.uni-trier.de/db/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://hkn.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
 --suppress-broken 500:https://sourceforge.net/projects/tide/
---suppress-broken 500:https://support.apple.com/kb/ph11523?locale=en_US
 --suppress-broken 500:https://sttt.cs.uni-dortmund.de/
+--suppress-broken 500:https://support.apple.com/kb/ph11523?locale=en_US
 --suppress-broken 500:https://ugradnews.cs.washington.edu/category/research/
-# https://web.mit.edu/21.guide/www requires a client certificate
---suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-ob.htm
---suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-wr.htm
---suppress-broken 500:https://web.mit.edu/21.guide/www/toc.htm
 --suppress-broken 500:https://web.mit.edu/6.033/www/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/staging/www/
@@ -221,6 +223,7 @@
 --suppress-broken 500:https://www.enthought.com/accounts/register/?next=/licenses/academic
 --suppress-broken 500:https://www.mpi-sws.org/
 --suppress-broken 500:https://www.mpi-sws.org/~roseh/JobSearch.html
+--suppress-broken 500:https://www.portlandjugglers.org/
 --suppress-broken 501:http://www.bizrate.com/
 --suppress-broken 501:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 501:https://web.mit.edu/21.guide/www/toc.htm
