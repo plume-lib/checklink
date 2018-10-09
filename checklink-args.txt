@@ -120,7 +120,7 @@
 --suppress-broken 403:https://gradle.org/
 --suppress-broken 403:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 403:https://javaparser.org/	
---suppress-broken 403:https://jet.com
+--suppress-broken 403:https://jet.com/
 --suppress-broken 403:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 403:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
@@ -206,6 +206,7 @@
 --suppress-broken 500:https://hkn.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
+--suppress-broken 500:https://people.lu.usi.ch/goffia/
 --suppress-broken 500:https://sourceforge.net/projects/tide/
 --suppress-broken 500:https://sttt.cs.uni-dortmund.de/
 --suppress-broken 500:https://support.apple.com/kb/ph11523?locale=en_US
