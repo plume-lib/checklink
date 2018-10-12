@@ -269,6 +269,7 @@
 --suppress-fragment https://groups.google.com/forum/#!forum/jsr308-discuss
 --suppress-fragment https://groups.google.com/forum/#!forum/randoop-discuss
 --suppress-fragment https://groups.google.com/forum/#!overview
+--suppress-fragment https://homes.cs.washington.edu/~mernst/pubs/pluggable-checkers-icse2011.pdf#page=3
 --suppress-fragment https://htmlpreview.github.io/?https://bitbucket.org/typetools/jsr308-langtools/raw/tip/doc/README-jsr308.html#reporting-bugs
 
 # This next group of suppress-fragments are required because makeinfo does the
