@@ -3,7 +3,8 @@ Maintenance
 Here are some instructions about maintaining this package.
 
 Periodically update the base version of `checklink` from
-http://search.cpan.org/dist/W3C-LinkChecker/ .  Use and update the diff
+http://search.cpan.org/dist/W3C-LinkChecker/
+or https://github.com/w3c/link-checker .  Use and update the diff
 file in this repository.
 
 Periodically browse to each URL in `checklink-args.txt` and remove any that
