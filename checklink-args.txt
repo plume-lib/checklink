@@ -214,6 +214,7 @@
 --suppress-broken 500:https://web.mit.edu/6.033/www/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/staging/www/
+--suppress-broken 500:https://www.arl.army.mil/www/default.cfm?page=29
 --suppress-broken 500:https://www.brown.edu/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/laptjavac/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/xajavac/
