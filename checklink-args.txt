@@ -175,7 +175,8 @@
 --suppress-broken 409:https://tips.seebrock3r.me/annotations-to-support-your-contracts-609ff259d5df
 --suppress-broken 412:http://validator.w3.org/check?uri=referer
 --suppress-broken 416:http://www.switchboard.com/
---suppress-broken 500:http://junit.org/
+
+## 500 special cases
 # kevinjsullivan.org goes down a lot; it's not worth getting notified about.
 --suppress-broken 500:http://kevinjsullivan.org/
 # w3.org delays responses dramatically
@@ -184,12 +185,13 @@
 --suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-ob.htm
 --suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 500:https://web.mit.edu/21.guide/www/toc.htm
-# General 500 section
---suppress-broken 500:http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-with-j2se50.htm
+## General 500 section
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
+--suppress-broken 500:http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-with-j2se50.htm
 --suppress-broken 500:http://jcp.org/en/jsr/detail?id=308
---suppress-broken 500:https://shuttleexpress.com/seattle-seatac-airport-transportation/       
---suppress-broken 500:https://shuttleexpress.com/seattle/airport/scheduled-hotel-service-to-seatac/  
+--suppress-broken 500:http://junit.org/
+--suppress-broken 500:http://localhost:3000/  
+--suppress-broken 500:http://localhost:8080/swagger-ui.html   
 --suppress-broken 500:http://www.eclipse.org/
 --suppress-broken 500:http://www.eclipse.org/documentation/
 --suppress-broken 500:http://www.eclipse.org/downloads/
@@ -199,6 +201,8 @@
 --suppress-broken 500:http://www.icse-conferences.org/2003/
 --suppress-broken 500:http://www.icse-conferences.org/2004/
 --suppress-broken 500:http://www.icse-conferences.org/2005/Home/
+--suppress-broken 500:https://shuttleexpress.com/seattle-seatac-airport-transportation/       
+--suppress-broken 500:https://shuttleexpress.com/seattle/airport/scheduled-hotel-service-to-seatac/  
 --suppress-broken 500:http://www.orbitz.com/
 --suppress-broken 500:https://www.onr.navy.mil/
 --suppress-broken 500:http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
