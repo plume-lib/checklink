@@ -150,6 +150,7 @@
 --suppress-broken 404:https://types.cs.washington.edu/plume-lib/guide/collections/index.html
 --suppress-broken 404:https://www.google.com/calendar/embed?mode=WEEK&src=mernst%40cs.washington.edu&ctz=America/Los_Angeles
 --suppress-broken 404:https://www.happycow.net/north_america/usa/washington/seattle/
+--suppress-broken 404:https://youtrack.jetbrains.com/issue/IDEA-159286
 --suppress-broken 405:http://aws.amazon.com/datasets
 --suppress-broken 405:http://code.activestate.com/recipes/langs/python/
 --suppress-broken 405:http://developer.android.com/tools/building/plugin-for-gradle.html
