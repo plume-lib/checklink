@@ -1278,7 +1278,9 @@ EOF
                 else {
 
                     # Resource with a fragment
-                    $links{$canon_uri}{fragments}{$fragment}{$line_num} = 1;
+                    if (! grep { $_ eq "$canon_uri#$fragment" } @{$Opts{Suppress_Fragment}}) {
+                        $links{$canon_uri}{fragments}{$fragment}{$line_num} = 1;
+                    }
                 }
             }
         }
