@@ -142,6 +142,7 @@
 --suppress-broken 404:http://www.juliasoft.com/
 --suppress-broken 404:http://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://calendar.google.com/calendar/embed?src=mernst%40cs.washington.edu&title=Michael%20Ernst&mode=WEEK
+--suppress-broken 404:https://search.maven.org/search?q=a:checker-compat-qual
 --suppress-broken 404:https://search.maven.org/search?q=g:org.checkerframework
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework.annotatedlib
