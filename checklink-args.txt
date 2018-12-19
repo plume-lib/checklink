@@ -194,6 +194,8 @@
 --suppress-broken 500:http://junit.org/
 --suppress-broken 500:http://localhost:3000/
 --suppress-broken 500:http://localhost:3000/subscribers
+--suppress-broken 500:http://localhost:8080/
+--suppress-broken 500:http://localhost:8080/subscribers
 --suppress-broken 500:http://localhost:8080/swagger-ui.html
 --suppress-broken 500:http://www.eclipse.org/
 --suppress-broken 500:http://www.eclipse.org/documentation/
