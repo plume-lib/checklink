@@ -1350,7 +1350,7 @@ EOF
                 $broken{$u}{fragments}{$fragment} += 2 unless $fragment_ok;
             }
         }
-        elsif (!($Opts{Quiet} && &informational($results{$u}{location}{code})))
+        elsif (!($Opts{Quiet} && defined($results{$u}{location}{code}) && &informational($results{$u}{location}{code})))
         {
 
             # Couldn't find the document
