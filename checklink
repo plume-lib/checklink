@@ -2903,6 +2903,8 @@ sub links_summary (\%\%\%\%)
         }
     }
 
+    @urls = grep { defined($results->{$_}{location}{record}) } @urls;
+
     # Broken links and redirects
     if ($#urls < 0) {
         if (!$Opts{Quiet}) {
