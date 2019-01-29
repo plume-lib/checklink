@@ -32,12 +32,14 @@
 --exclude-docs https://courses.cs.washington.edu/courses/cse599e1/16au/csenetid/
 
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
---suppress-broken 301:https://goo.gl/forms/UUFpyNBqeiSJKlMm2
+--suppress-broken 301:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
 --suppress-broken 301:http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37
---suppress-broken 301:http://www.cs.virginia.edu/~sullivan/
---suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
---suppress-broken 301:http://www.nwfolklife.org/festival/
 --suppress-broken 301:http://www.baesystems.com/en/home
+--suppress-broken 301:http://www.cs.virginia.edu/~sullivan/
+--suppress-broken 301:http://www.nwfolklife.org/festival/
+--suppress-broken 301:https://goo.gl/forms/H86dwbdiIDtsyCbG3
+--suppress-broken 301:https://goo.gl/forms/UUFpyNBqeiSJKlMm2
+--suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
 --suppress-broken 302:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
 # Official URL, but redirects elsewhere
 --suppress-broken 302:http://dx.doi.org/10.1109/2.59
@@ -437,6 +439,7 @@
 --suppress-redirect http://www.verigames.com/login/google->https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=http%3A%2F%2Fwww.verigames.com%2Flogin%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=451230570634.apps.googleusercontent.com&type=web_server
 --suppress-redirect http://www.weather.com/weather/local/USWA0395->http://xhtml.weather.com/xhtml/search
 --suppress-redirect http://yoav.zibin.googlepages.com/->http://www.google.com/gwt/n?source=pagecreator&u=http%3A%2F%2FYoav.Zibin.googlepages.com%2Fhome
+--suppress-redirect https://goo.gl/forms/H86dwbdiIDtsyCbG3->https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLScFY395VOfQgOEYqxfE2nPaUtptgoNX13QW624Cx-sQs9xn5g/viewform?usp%3Dsend_form&followup=https://docs.google.com/forms/d/e/1FAIpQLScFY395VOfQgOEYqxfE2nPaUtptgoNX13QW624Cx-sQs9xn5g/viewform?usp%3Dsend_form&ltmpl=forms
 --suppress-redirect https://goo.gl/forms/UUFpyNBqeiSJKlMm2->https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSenxfDonfdcCPGSf-csk8XQjEAjIQvmeUMfs67cROUgv_d0Eg/viewform?usp%3Dsend_form&followup=https://docs.google.com/forms/d/e/1FAIpQLSenxfDonfdcCPGSf-csk8XQjEAjIQvmeUMfs67cROUgv_d0Eg/viewform?usp%3Dsend_form&ltmpl=forms
 --suppress-redirect https://open.library.ubc.ca/handle/2429/46122->https://open.library.ubc.ca/cIRcle/collections/facultyresearchandpublications/52383/items/1.0051021
 --suppress-redirect https://sqlshare.escience.washington.edu/->https://sqlshare.escience.washington.edu/accounts/login/?next=/sqlshare/
