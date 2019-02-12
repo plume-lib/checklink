@@ -166,6 +166,7 @@
 --suppress-broken 405:http://www.edwardxwu.com/
 --suppress-broken 405:http://www.kivancmuslu.com/
 --suppress-broken 405:https://camelcamelcamel.com/
+--suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
 --suppress-broken 405:https://www.linkedin.com/in/jinliny/
