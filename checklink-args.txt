@@ -40,8 +40,7 @@
 --suppress-broken 301:https://goo.gl/forms/H86dwbdiIDtsyCbG3
 --suppress-broken 301:https://goo.gl/forms/UUFpyNBqeiSJKlMm2
 --suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
---suppress-broken 302:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
-# Official URL, but redirects elsewhere
+# 302: official URL, but redirects elsewhere.  Also need to list in --suppress-redirect.
 --suppress-broken 302:http://dx.doi.org/10.1109/2.59
 --suppress-broken 302:http://dx.doi.org/10.1109/WODA.2007.3
 --suppress-broken 302:http://ieeexplore.ieee.org/
@@ -116,6 +115,7 @@
 --suppress-broken 403:http://www.seattleweekly.com/
 --suppress-broken 403:http://www.topcoder.com/
 --suppress-broken 403:https://courses.cs.washington.edu/courses/cse599e1/16au/csenetid/books/experimentation-in-software-engineering-2012.pdf
+--suppress-broken 403:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
 --suppress-broken 403:https://eng.uber.com/jvm-profiler/
 --suppress-broken 403:https://galois.com/team/joe-kiniry/
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v3.0.8/randoop-3.0.8.zip
@@ -222,6 +222,7 @@
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_Spring_2014
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
 --suppress-broken 500:https://dblp.uni-trier.de/db/
+--suppress-broken 500:http://www.mcs.anl.gov:443/
 --suppress-broken 500:https://drona.csa.iisc.ac.in:443
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://hkn.mit.edu/
