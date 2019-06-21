@@ -280,6 +280,7 @@
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=124498177728201
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&appId=124498177728201
 --suppress-fragment https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A
+--suppress-fragment https://github.com/kelloggm/checkerframework-gradle-plugin#incompatibility-with-error-prone
 --suppress-fragment https://github.com/rjust/defects4j#requirements
 --suppress-fragment https://gitlab.cs.washington.edu/help/ssh/README#generating-a-new-ssh-key-pair
 --suppress-fragment https://groups.google.com/a/cs.washington.edu/forum/#!forum/cse403-18sp-discussion
@@ -365,7 +366,7 @@
 
 # This next group of suppress-fragments are required because "javadoc -private"
 # makes links to non-existent constructors for nested classes.  Remove them when
-# when this bug is fixed: https://bugs.openjdk.java.net/browse/CODETOOLS-7901742
+# this bug is fixed: https://bugs.openjdk.java.net/browse/JDK-8166113
 --suppress-fragment https://randoop.github.io/randoop/api/randoop/util/ProgressDisplay.Mode.html#Mode--
 --suppress-fragment https://randoop.github.io/randoop/api/randoop/util/ReversibleMultiMap.Ops.html#Ops--
 --suppress-fragment https://randoop.github.io/randoop/api/randoop/main/GenInputsAbstract.ClassLiteral#ClassLiteralsMode--
