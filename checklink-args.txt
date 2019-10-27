@@ -69,6 +69,7 @@
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.1.1/randoop-4.1.1.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.1.2/randoop-4.1.2.zip
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.2.0/randoop-4.2.0.zip
+--suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.2.1/randoop-4.2.1.zip
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 302:https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8255774
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
@@ -128,6 +129,7 @@
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.1.1/randoop-4.1.1.zip
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.1.2/randoop-4.1.2.zip
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.2.0/randoop-4.2.0.zip
+--suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.2.1/randoop-4.2.1.zip
 --suppress-broken 403:https://gradle.org/
 --suppress-broken 403:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 403:https://javaparser.org/
