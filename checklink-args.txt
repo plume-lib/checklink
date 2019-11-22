@@ -265,6 +265,7 @@
 --suppress-fragment https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A
 --suppress-fragment https://github.com/kelloggm/checkerframework-gradle-plugin#incompatibility-with-error-prone
 --suppress-fragment https://github.com/rjust/defects4j#requirements
+--suppress-fragment https://github.com/uber/okbuck/wiki/Using-Error-Prone-with-Buck-and-OkBuck#using-error-prone-javac-on-jdk-8
 --suppress-fragment https://gitlab.cs.washington.edu/help/ssh/README#generating-a-new-ssh-key-pair
 --suppress-fragment https://groups.google.com/a/cs.washington.edu/forum/#!forum/cse403-18sp-discussion
 --suppress-fragment https://groups.google.com/forum/#!forum/checker-framework-dev
