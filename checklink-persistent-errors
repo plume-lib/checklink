@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 r"""This script allows you to ignore transient errors in checklink output.
 Run it like this:
@@ -28,8 +28,8 @@ import re
 import sys
 
 # For debugging
-import pprint
-pp = pprint.PrettyPrinter()
+# import pprint
+# PP = pprint.PrettyPrinter()
 
 DEBUG_PARSING = False
 DEBUG_PRINTING = False
@@ -39,19 +39,20 @@ DEBUG_INTERSECTION = False
 # DEBUG_PRINTING = True
 # DEBUG_INTERSECTION = True
 
+
 def main():
     """Main routine for checklink-persistent-errors.
 Takes 2 arguments, a basename and a number of files to read."""
 
     if len(sys.argv) != 3:
-        print("%s requires exactly 2 arguments, got %d" % (sys.argv[0], len(sys.argv)-1))
-        exit(1)
+        print("%s requires exactly 2 arguments, got %d" % (sys.argv[0], len(sys.argv) - 1))
+        sys.exit(1)
     basename = sys.argv[1]
     instances = int(sys.argv[2])
 
     files = glob.glob(basename + "*")
     if len(files) < instances:
-        exit(0)
+        sys.exit(0)
 
     # Sort by file time
     files.sort(key=lambda x: os.stat(x).st_mtime)
@@ -59,27 +60,27 @@ Takes 2 arguments, a basename and a number of files to read."""
     # results is a list of maps
     results = []
     for i in range(0, instances):
-        this_file = files[-(i+1)]
+        this_file = files[-(i + 1)]
         results.append(parse_checklink_output_file(this_file))
 
     urls = set(results[0].keys())
-    if DEBUG_INTERSECTION: print("initial urls = %s" % urls)
-    for r in results:
-        if DEBUG_INTERSECTION: print("merging in %s" % set(r.keys()))
-        urls = urls & set(r.keys())
-        if DEBUG_INTERSECTION: print("intersection (new urls) = %s" % urls)
+    debug_print(DEBUG_INTERSECTION, "initial urls = %s" % urls)
+    for result in results:
+        debug_print(DEBUG_INTERSECTION, "merging in %s" % set(result.keys()))
+        urls = urls & set(result.keys())
+        debug_print(DEBUG_INTERSECTION, "intersection (new urls) = %s" % urls)
 
     for url in sorted(urls):
-        if DEBUG_PRINTING: print("processing URL: %s" % url)
+        debug_print(DEBUG_PRINTING, "processing URL: %s" % url)
         persistent = results[0][url]
-        if DEBUG_PRINTING: print("initial persistent = %s" % persistent)
-        for r in results:
-            # if DEBUG_PRINTING: print("r = %s" % r)
-            if DEBUG_PRINTING: print("r[url] = %s" % r[url])
-            persistent = [x for x in persistent if x in r[url]]
-            if DEBUG_PRINTING: print("persistent at end of loop = %s" % persistent)
-        if DEBUG_PRINTING: print("final persistent = %s" % persistent)
-        if persistent:             # equivalent to "if len(persistent > 0)"
+        debug_print(DEBUG_PRINTING, "initial persistent = %s" % persistent)
+        for result in results:
+            # debug_print(DEBUG_PRINTING, "result = %s" % result))
+            debug_print(DEBUG_PRINTING, "result[url] = %s" % result[url])
+            persistent = [x for x in persistent if x in result[url]]
+            debug_print(DEBUG_PRINTING, "persistent at end of loop = %s" % persistent)
+        debug_print(DEBUG_PRINTING, "final persistent = %s" % persistent)
+        if persistent:  # equivalent to "if len(persistent > 0)"
             print("")
             print("----------------------------------------")
             print("")
@@ -92,7 +93,8 @@ Takes 2 arguments, a basename and a number of files to read."""
 
 def paragraphs(fileobj, separator='\n'):
     """Yield each paragraph from fileobj, one by one."""
-    if separator[-1:] != '\n': separator += '\n'
+    if separator[-1:] != '\n':
+        separator += '\n'
     paragraph = []
     for line in fileobj:
         if line == separator:
@@ -101,45 +103,55 @@ def paragraphs(fileobj, separator='\n'):
                 paragraph = []
         else:
             paragraph.append(line)
-    if paragraph: yield ''.join(paragraph)
+    if paragraph:
+        yield ''.join(paragraph)
+
 
 LISTOF1 = "\nList of broken links and other issues:\n"
 LISTOF2 = "\nList of redirects\n"
 
+
 def parse_checklink_output_file(checklink_output_file):
     "Returns a map from URLs to list of problem reports for the URL"
-    if DEBUG_PARSING: print("parse_checklink_output_file: %s" % checklink_output_file)
+    debug_print(DEBUG_PARSING, "parse_checklink_output_file: %s" % checklink_output_file)
     result = {}
     url = None
-    f = open(checklink_output_file, 'r')
-    paras = f.read().split("\n\n") # paragraphs
-    for p in paras:
-        if DEBUG_PARSING: print("url = %s, paragraph = <<<%s>>>" % (url, p))
-        if re.match("\n?Processing\t", p):
-            url = p
+    paras = open(checklink_output_file, 'r').read().split("\n\n")  # paragraphs
+    for para in paras:
+        debug_print(DEBUG_PARSING, "url = %s, paragraph = <<<%s>>>" % (url, para))
+        if re.match("\n?Processing\t", para):
+            url = para
             continue
-        if (p == "----------------------------------------"
+        if (para in (
+                "----------------------------------------",
                 # for very first record
-                or p == "\n----------------------------------------"
+                "\n----------------------------------------",
                 # for empty file
-                or p == ""):
+                "")):
             url = None
             continue
-        if p.startswith(LISTOF1):
-            p = p[len(LISTOF1):]
-        if p.startswith(LISTOF2):
-            p = p[len(LISTOF2):]
-        if p.endswith("\n"):
-            p = p[:-1]
-        if DEBUG_PARSING: print("Cleaned-up paragraph: <<<%s>>>" % p)
-        if (url is None): print("bad url None for <<<%s>>>" % p)
-        if not (url in result):
+        if para.startswith(LISTOF1):
+            para = para[len(LISTOF1):]
+        if para.startswith(LISTOF2):
+            para = para[len(LISTOF2):]
+        if para.endswith("\n"):
+            para = para[:-1]
+        debug_print(DEBUG_PARSING, "Cleaned-up paragraph: <<<%s>>>" % para)
+        if url is None:
+            print("bad url None for <<<%s>>>" % para)
+        if url not in result:
             result[url] = []
-        if DEBUG_PARSING: print("adding to result[%s]: <<<%s>>>" % (url, p))
-        result[url].append(p)
-        if DEBUG_PARSING: print("result = %s" % result)
+        debug_print(DEBUG_PARSING, "adding to result[%s]: <<<%s>>>" % (url, para))
+        result[url].append(para)
+        debug_print(DEBUG_PARSING, "result = %s" % result)
 
     return result
+
+
+def debug_print(boolean, string):
+    """Print the string if the first argument is True."""
+    if boolean:
+        print(string)
 
 
 main()
