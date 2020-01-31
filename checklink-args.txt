@@ -33,10 +33,12 @@
 
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
 --suppress-broken 301:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
+--suppress-broken 301:http://doi.acm.org/10.1145/1467247.1467259
 --suppress-broken 301:http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37
 --suppress-broken 301:http://www.baesystems.com/en/home
 --suppress-broken 301:http://www.cs.virginia.edu/~sullivan/
 --suppress-broken 301:http://www.nwfolklife.org/festival/
+--suppress-broken 301:https://dl.acm.org/dl.cfm
 --suppress-broken 301:https://goo.gl/forms/H86dwbdiIDtsyCbG3
 --suppress-broken 301:https://goo.gl/forms/UUFpyNBqeiSJKlMm2
 --suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
@@ -365,6 +367,7 @@
 --suppress-redirect http://2006.ecoop.org/->http://www.emn.fr/x-info/ecoop2006/
 --suppress-redirect http://cascade.org/->http://cascade.org/Home/
 --suppress-redirect http://defects4j.org/->https://github.com/rjust/defects4j
+--suppress-redirect http://doi.acm.org/10.1145/1467247.1467259->https://dl.acm.org/action/cookieAbsent       
 --suppress-redirect http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37->http://www.computer.org/csdl/proceedings/icsm/2005/2368/00/23680401-abs.html
 --suppress-redirect http://doi.ieeecomputersociety.org/10.1109/TSE.2006.90->http://www.computer.org/csdl/trans/ts/2006/09/e0718-abs.html
 --suppress-redirect http://download.java.net/jdk7/binaries/->http://dlc.sun.com.edgesuite.net/jdk7/binaries/index.html
@@ -432,6 +435,7 @@
 --suppress-redirect http://www.verigames.com/login/google->https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=http%3A%2F%2Fwww.verigames.com%2Flogin%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=451230570634.apps.googleusercontent.com&type=web_server
 --suppress-redirect http://www.weather.com/weather/local/USWA0395->http://xhtml.weather.com/xhtml/search
 --suppress-redirect http://yoav.zibin.googlepages.com/->http://www.google.com/gwt/n?source=pagecreator&u=http%3A%2F%2FYoav.Zibin.googlepages.com%2Fhome
+--suppress-redirect https://dl.acm.org/dl.cfm->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://goo.gl/forms/H86dwbdiIDtsyCbG3->https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLScFY395VOfQgOEYqxfE2nPaUtptgoNX13QW624Cx-sQs9xn5g/viewform?usp%3Dsend_form&followup=https://docs.google.com/forms/d/e/1FAIpQLScFY395VOfQgOEYqxfE2nPaUtptgoNX13QW624Cx-sQs9xn5g/viewform?usp%3Dsend_form&ltmpl=forms
 --suppress-redirect https://goo.gl/forms/UUFpyNBqeiSJKlMm2->https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSenxfDonfdcCPGSf-csk8XQjEAjIQvmeUMfs67cROUgv_d0Eg/viewform?usp%3Dsend_form&followup=https://docs.google.com/forms/d/e/1FAIpQLSenxfDonfdcCPGSf-csk8XQjEAjIQvmeUMfs67cROUgv_d0Eg/viewform?usp%3Dsend_form&ltmpl=forms
 --suppress-redirect https://open.library.ubc.ca/handle/2429/46122->https://open.library.ubc.ca/cIRcle/collections/facultyresearchandpublications/52383/items/1.0051021
