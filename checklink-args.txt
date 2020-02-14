@@ -265,6 +265,10 @@
 --suppress-fragment http://www.washington.edu/maps/#!/low
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=124498177728201
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&appId=124498177728201
+--suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.2
+--suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.2.1
+--suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.2
+--suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.3
 --suppress-fragment https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A
 --suppress-fragment https://github.com/kelloggm/checkerframework-gradle-plugin#incompatibility-with-error-prone
 --suppress-fragment https://github.com/rjust/defects4j#requirements
