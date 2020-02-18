@@ -33,11 +33,13 @@
 
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
 --suppress-broken 301:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
+--suppress-broken 301:http://doi.acm.org/10.1145/1134285.1134491
 --suppress-broken 301:http://doi.acm.org/10.1145/1467247.1467259
 --suppress-broken 301:http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37
 --suppress-broken 301:http://www.baesystems.com/en/home
 --suppress-broken 301:http://www.cs.virginia.edu/~sullivan/
 --suppress-broken 301:http://www.nwfolklife.org/festival/
+--suppress-broken 301:https://dl.acm.org/citation.cfm?id=202530
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=J706
 --suppress-broken 301:https://dl.acm.org/dl.cfm
 --suppress-broken 301:https://goo.gl/forms/H86dwbdiIDtsyCbG3
@@ -181,7 +183,9 @@
 --suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-ob.htm
 --suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 500:https://web.mit.edu/21.guide/www/toc.htm
+
 ## General 500 section
+--suppress-broken 500:https://www.baesystems.com/en/home
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
 --suppress-broken 500:http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-with-j2se50.htm
 --suppress-broken 500:http://jcp.org/en/jsr/detail?id=308
@@ -373,6 +377,7 @@
 --suppress-redirect http://cascade.org/->http://cascade.org/Home/
 --suppress-redirect http://defects4j.org/->https://github.com/rjust/defects4j
 --suppress-redirect http://doi.acm.org/10.1145/1467247.1467259->https://dl.acm.org/action/cookieAbsent
+--suppress-redirect https://dl.acm.org/doi/10.1145/1134285.1134491->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37->http://www.computer.org/csdl/proceedings/icsm/2005/2368/00/23680401-abs.html
 --suppress-redirect http://doi.ieeecomputersociety.org/10.1109/TSE.2006.90->http://www.computer.org/csdl/trans/ts/2006/09/e0718-abs.html
 --suppress-redirect http://download.java.net/jdk7/binaries/->http://dlc.sun.com.edgesuite.net/jdk7/binaries/index.html
