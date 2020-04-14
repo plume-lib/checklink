@@ -37,12 +37,17 @@
 --suppress-broken 301:http://doi.acm.org/10.1145/1467247.1467259
 --suppress-broken 301:http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37
 --suppress-broken 301:http://dx.doi.org/10.1007/s10515-006-0002-0
+--suppress-broken 301:http://dx.doi.org/10.1007/s10515-006-0002-0
+--suppress-broken 301:http://dx.doi.org/10.1007/s10515-006-0002-0
 --suppress-broken 301:http://www.baesystems.com/en/home
 --suppress-broken 301:http://www.cs.virginia.edu/~sullivan/
 --suppress-broken 301:http://www.nwfolklife.org/festival/
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=202530
+--suppress-broken 301:https://dl.acm.org/citation.cfm?id=565816.503275
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=J706
 --suppress-broken 301:https://dl.acm.org/dl.cfm
+--suppress-broken 301:https://dx.doi.org/10.1007/s10515-006-0002-0
+--suppress-broken 301:https://dx.doi.org/10.1007/s10515-006-0002-0
 --suppress-broken 301:https://goo.gl/forms/H86dwbdiIDtsyCbG3
 --suppress-broken 301:https://goo.gl/forms/UUFpyNBqeiSJKlMm2
 --suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
@@ -138,6 +143,8 @@
 --suppress-broken 404:http://www.juliasoft.com/
 --suppress-broken 404:http://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://calendar.google.com/calendar/embed?src=mernst%40cs.washington.edu&title=Michael%20Ernst&mode=WEEK
+--suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=1&branchName=master
+--suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=2&branchName=master
 --suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.2.3/randoop-4.2.3.zip
 --suppress-broken 404:https://search.maven.org/search?q=a:checker-compat-qual
 --suppress-broken 404:https://search.maven.org/search?q=g:org.checkerframework
@@ -158,6 +165,8 @@
 --suppress-broken 405:http://www.edwardxwu.com/
 --suppress-broken 405:http://www.kivancmuslu.com/
 --suppress-broken 405:https://camelcamelcamel.com/
+--suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.daikon?branchName=master
+--suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.fjalar?branchName=master
 --suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
