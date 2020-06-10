@@ -455,9 +455,11 @@
 --suppress-redirect http://www.verigames.com/login/google->https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=http%3A%2F%2Fwww.verigames.com%2Flogin%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=451230570634.apps.googleusercontent.com&type=web_server
 --suppress-redirect http://www.weather.com/weather/local/USWA0395->http://xhtml.weather.com/xhtml/search
 --suppress-redirect http://yoav.zibin.googlepages.com/->http://www.google.com/gwt/n?source=pagecreator&u=http%3A%2F%2FYoav.Zibin.googlepages.com%2Fhome
+--suppress-redirect https://dl.acm.org/citation.cfm?id=1065579.1065786->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=565816.503275->https://dl.acm.org/doi/10.1145/565816.503275
 --suppress-redirect https://dl.acm.org/citation.cfm?id=566171.566212->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=581377->https://dl.acm.org/doi/10.1145/581339.581377
+--suppress-redirect https://dl.acm.org/citation.cfm?id=998675.999449->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=J706->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/dl.cfm->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/doi/10.1145/1134285.1134491->https://dl.acm.org/action/cookieAbsent
