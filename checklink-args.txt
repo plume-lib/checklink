@@ -64,7 +64,7 @@
 --suppress-broken 302:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/nl-pl.pdf
 --suppress-broken 302:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/tellina.pdf
 --suppress-broken 302:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
---suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.2.3/randoop-4.2.3.zip
+--suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.2.4/randoop-4.2.4.zip
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 302:https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8255774
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
@@ -116,7 +116,7 @@
 --suppress-broken 403:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
 --suppress-broken 403:https://eng.uber.com/jvm-profiler/
 --suppress-broken 403:https://galois.com/team/joe-kiniry/
---suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.2.3/randoop-4.2.3.zip
+--suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.2.4/randoop-4.2.4.zip
 --suppress-broken 403:https://gradle.org/
 --suppress-broken 403:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 403:https://javaparser.org/
@@ -143,7 +143,7 @@
 --suppress-broken 404:https://calendar.google.com/calendar/embed?src=mernst%40cs.washington.edu&title=Michael%20Ernst&mode=WEEK
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=1&branchName=master
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=2&branchName=master
---suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.2.3/randoop-4.2.3.zip
+--suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.2.4/randoop-4.2.4.zip
 --suppress-broken 404:https://search.maven.org/search?q=a:checker-compat-qual
 --suppress-broken 404:https://search.maven.org/search?q=g:org.checkerframework
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework
@@ -165,6 +165,7 @@
 --suppress-broken 405:https://camelcamelcamel.com/
 --suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.daikon?branchName=master
 --suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.fjalar?branchName=master
+--suppress-broken 405:https://www.linkedin.com/in/albertogoffi/
 --suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
@@ -216,7 +217,9 @@
 --suppress-broken 500:http://www.mcs.anl.gov:443/
 --suppress-broken 500:http://www.orbitz.com/
 --suppress-broken 500:http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
+--suppress-broken 500:https://api.travis-ci.org/randoop/randoop.svg?branch=master
 --suppress-broken 500:https://blog.techhit.com/551102-how-to-prevent-outlook-from-adding-line-breaks-to-sent-plain-text-messages
+--suppress-broken 500:https://blogs.oracle.com/darcy/so-you-want-to-change-the-java-programming-language
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_Spring_2014
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
 --suppress-broken 500:https://dblp.uni-trier.de/db/
@@ -231,11 +234,13 @@
 --suppress-broken 500:https://sourceforge.net/projects/tide/
 --suppress-broken 500:https://sttt.cs.uni-dortmund.de/
 --suppress-broken 500:https://support.apple.com/kb/ph11523?locale=en_US
+--suppress-broken 500:https://travis-ci.org/randoop/randoop
 --suppress-broken 500:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 500:https://web.mit.edu/6.033/www/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/staging/www/
 --suppress-broken 500:https://www.arl.army.mil/www/default.cfm?page=29
+--suppress-broken 500:https://www.baesystems.com/en/home
 --suppress-broken 500:https://www.brown.edu/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/laptjavac/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/xajavac/
