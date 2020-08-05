@@ -1,3 +1,5 @@
+#!/usr/bin/env perl
+# -w is like "use warnings;", which I have written below.  Give up on -T in order to use /usr/bin/env .
 #!/usr/bin/perl -wT
 #
 # W3C Link Checker
@@ -19,6 +21,7 @@
 #
 # Comments and suggestions should be filed on github
 
+use warnings;
 use strict;
 use 5.008;
 use English;
