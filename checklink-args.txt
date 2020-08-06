@@ -152,6 +152,7 @@
 --suppress-broken 404:https://types.cs.washington.edu/plume-lib/guide/collections/index.html
 --suppress-broken 404:https://www.google.com/calendar/embed?mode=WEEK&src=mernst%40cs.washington.edu&ctz=America/Los_Angeles
 --suppress-broken 404:https://www.happycow.net/north_america/usa/washington/seattle/
+--suppress-broken 404:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://youtrack.jetbrains.com/issue/IDEA-159286
 --suppress-broken 405:http://aws.amazon.com/datasets
 --suppress-broken 405:http://code.activestate.com/recipes/langs/python/
@@ -166,6 +167,7 @@
 --suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.daikon?branchName=master
 --suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.fjalar?branchName=master
 --suppress-broken 405:https://www.linkedin.com/in/albertogoffi/
+--suppress-broken 405:https://www.linkedin.com/in/bentribelhorn/
 --suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
@@ -179,6 +181,7 @@
 --suppress-broken 406:http://www.cra.org/resources/bp-view/evaluating_computer_scientists_and_engineers_for_promotion_and_tenure/
 --suppress-broken 406:http://www.ijcai.org/past/ijcai-97/
 --suppress-broken 406:http://www.nwfolklife.org/festival/
+--suppress-broken 406:https://archive.siam.org/meetings/alice03/index.htm
 --suppress-broken 406:https://www.nwfolklife.org/festival/
 --suppress-broken 409:https://tips.seebrock3r.me/annotations-to-support-your-contracts-609ff259d5df
 --suppress-broken 412:http://validator.w3.org/check?uri=referer
