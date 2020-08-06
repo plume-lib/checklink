@@ -80,6 +80,7 @@
 --suppress-broken 303:http://hdl.handle.net/2429/46122
 --suppress-broken 303:http://www.nytimes.com/2011/04/03/business/03stream.html
 --suppress-broken 303:http://www.nytimes.com/2011/09/30/science/30twitter.html
+--suppress-broken 308:http://tinyurl.com/dataprogramming
 --suppress-broken 400:http://www.computer.org/web/tse
 --suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/nl-pl.pdf
 --suppress-broken 400:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/tellina.pdf
@@ -280,6 +281,8 @@
 --suppress-broken 503:https://www.microsoft.com/mspress/books/770.aspx
 --suppress-broken 503:https://www.orbitz.com/
 
+# Some --suppress-fragment are due to a bug in Javadoc: it assumes that the superclass defines a method, but the superclass might itself inherit it.
+
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.checkerframework%22
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Corg.checkerframework
 --suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Crandoop
@@ -287,6 +290,13 @@
 --suppress-fragment http://www.washington.edu/maps/#!/low
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=124498177728201
 --suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&appId=124498177728201
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#equals(java.lang.Object)
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#hashCode()
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#replaceAll(java.util.function.UnaryOperator)
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#sort(java.util.Comparator)
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getName()
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toString()
+--suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toUri()
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.2
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.2.1
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.2
