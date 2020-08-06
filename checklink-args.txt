@@ -141,6 +141,7 @@
 --suppress-broken 404:http://www.juliasoft.com/
 --suppress-broken 404:http://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://calendar.google.com/calendar/embed?src=mernst%40cs.washington.edu&title=Michael%20Ernst&mode=WEEK
+--suppress-broken 404:https://circleci.com/dashboard
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=1&branchName=master
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=2&branchName=master
 --suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.2.4/randoop-4.2.4.zip
