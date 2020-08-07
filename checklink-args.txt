@@ -172,6 +172,7 @@
 --suppress-broken 405:https://www.linkedin.com/in/bentribelhorn/
 --suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
+--suppress-broken 405:https://www.linkedin.com/in/kevinmvu/
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
 --suppress-broken 405:https://www.linkedin.com/in/jinliny/
 --suppress-broken 405:https://www.linkedin.com/in/joewhaley
@@ -200,7 +201,7 @@
 --suppress-broken 500:https://web.mit.edu/21.guide/www/toc.htm
 
 ## General 500 section
---suppress-broken 500:https://www.baesystems.com/en/home
+--suppress-broken 500:http://cgi.di.uoa.gr/~mema/courses/m131/reviews.pdf
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
 --suppress-broken 500:http://help.eclipse.org/help33/index.jsp?topic=/org.eclipse.jdt.doc.user/gettingStarted/qs-with-j2se50.htm
 --suppress-broken 500:http://jcp.org/en/jsr/detail?id=308
