@@ -152,8 +152,10 @@
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework.annotatedlib
 --suppress-broken 404:https://types.cs.washington.edu/plume-lib/api/resources/fonts/dejavu.css
 --suppress-broken 404:https://types.cs.washington.edu/plume-lib/guide/collections/index.html
+--suppress-broken 404:https://www.darpa.mil
 --suppress-broken 404:https://www.google.com/calendar/embed?mode=WEEK&src=mernst%40cs.washington.edu&ctz=America/Los_Angeles
 --suppress-broken 404:https://www.happycow.net/north_america/usa/washington/seattle/
+--suppress-broken 404:https://www.nytimes.com/section/todayspaper
 --suppress-broken 404:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://youtrack.jetbrains.com/issue/IDEA-159286
 --suppress-broken 405:http://aws.amazon.com/datasets
@@ -172,10 +174,10 @@
 --suppress-broken 405:https://www.linkedin.com/in/bentribelhorn/
 --suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
 --suppress-broken 405:https://www.linkedin.com/in/hao-lu-86704177
---suppress-broken 405:https://www.linkedin.com/in/kevinmvu/
 --suppress-broken 405:https://www.linkedin.com/in/ittaibalaban
 --suppress-broken 405:https://www.linkedin.com/in/jinliny/
 --suppress-broken 405:https://www.linkedin.com/in/joewhaley
+--suppress-broken 405:https://www.linkedin.com/in/kevinmvu/
 --suppress-broken 405:https://www.linkedin.com/in/manos-renieris-99b5531
 --suppress-broken 405:https://www.linkedin.com/in/steve-anton-944aa36b
 --suppress-broken 406:http://kevinjsullivan.org/
