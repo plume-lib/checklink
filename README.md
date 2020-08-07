@@ -10,6 +10,12 @@ This directory contains:
 
 These are described in more detail below.
 
+
+# Installation
+
+You need to have CSS/DOM.pm installed (get it from CPAN).
+
+
 # checklink
 
 The checklink program reports broken links.  You can run it periodically,
@@ -35,7 +41,7 @@ problems.  Run `checklink` like this:
 
 There are certain checklink warning that you do not want to see, because
 they are not important or you cannot fix them.  Removing them from the
-output enables you to find the result more easily.
+output enables you to find the interesting results more easily.
 Examples include:
  * There is a redirect, but you wish to refer to the original URL rather than the redirected one.
  * A URL is unreadable by a web-crawling robot such as `checklink`, but the URL works from a web browser.
@@ -60,8 +66,3 @@ There is more
 [documentation](https://raw.githubusercontent.com/plume-lib/checklink/master/checklink-persistent-errors)
 at the top of file, including examples of commands you could put in your
 crontab to run the link checker periodically.
-
-
-# Installation
-
-You need to have CSS/DOM.pm installed (get it from CPAN).
