@@ -1,7 +1,14 @@
-This directory contains a slightly modified version of the [W3C Link
-Checker](http://search.cpan.org/dist/W3C-LinkChecker/), together with
-supporting programs.
+This directory contains:
+ * a slightly modified version of the
+   [W3C Link Checker](http://search.cpan.org/dist/W3C-LinkChecker/).
+ * the file `checklink-args.txt`, which contains useful command-line
+   arguments for the `checklink` program that reduce false positive warnings.
+ * the program `checklink-persistent-errors`, which processes multiple runs
+   of `checklink` and outputs only the errors that appear in all of the
+   runs.  This lets you ignore transient errors due to network flakiness or a
+   host being down temporarily.
 
+These are described in more detail below.
 
 # checklink
 
