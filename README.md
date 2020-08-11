@@ -11,7 +11,7 @@ This directory contains:
 These are described in more detail below.
 
 
-# Installation
+# Prerequisites
 
 You need to have CSS/DOM.pm installed (get it from CPAN).
 
