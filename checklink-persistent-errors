@@ -40,6 +40,13 @@ DEBUG_INTERSECTION = False
 # DEBUG_INTERSECTION = True
 
 
+def nonesorter(a):
+    """Maps None to the empty string, for sorting."""
+    if not a:
+        return ""
+    return a
+
+
 def main():
     """Main routine for checklink-persistent-errors.
 Takes 2 arguments, a basename and a number of files to read."""
@@ -70,7 +77,7 @@ Takes 2 arguments, a basename and a number of files to read."""
         urls = urls & set(result.keys())
         debug_print(DEBUG_INTERSECTION, "intersection (new urls) = %s" % urls)
 
-    for url in sorted(urls):
+    for url in sorted(urls, key=nonesorter):
         debug_print(DEBUG_PRINTING, "processing URL: %s" % url)
         persistent = results[0][url]
         debug_print(DEBUG_PRINTING, "initial persistent = %s" % persistent)
@@ -83,8 +90,9 @@ Takes 2 arguments, a basename and a number of files to read."""
         if persistent:  # equivalent to "if len(persistent > 0)"
             print("")
             print("----------------------------------------")
-            print("")
-            print(url)
+            if url:
+                print("")
+                print(url)
             # It's not worth outputting "List of broken links and other issues:"
             for report in persistent:
                 print("")
@@ -113,7 +121,7 @@ LISTOF2 = "\nList of redirects\n"
 
 def parse_checklink_output_file(checklink_output_file):
     "Returns a map from URLs to list of problem reports for the URL"
-    debug_print(DEBUG_PARSING, "parse_checklink_output_file: %s" % checklink_output_file)
+    debug_print(DEBUG_PARSING, "parse_checklink_output_file(%s)" % checklink_output_file)
     result = {}
     url = None
     paras = open(checklink_output_file, 'r').read().split("\n\n")  # paragraphs
@@ -137,13 +145,16 @@ def parse_checklink_output_file(checklink_output_file):
         if para.endswith("\n"):
             para = para[:-1]
         debug_print(DEBUG_PARSING, "Cleaned-up paragraph: <<<%s>>>" % para)
-        if url is None:
-            print("bad url None for <<<%s>>>" % para)
+        ## This occurs if checklink prints an error before the first URL.
+        # if url is None:
+        #     print("bad url None for <<<%s>>>" % para)
         if url not in result:
             result[url] = []
         debug_print(DEBUG_PARSING, "adding to result[%s]: <<<%s>>>" % (url, para))
         result[url].append(para)
         debug_print(DEBUG_PARSING, "result = %s" % result)
+
+    debug_print(DEBUG_PARSING, "parse_checklink_output_file(%s) => %s" % (checklink_output_file, result))
 
     return result
 
