@@ -408,6 +408,7 @@
 --suppress-redirect http://cascade.org/->http://cascade.org/Home/
 --suppress-redirect http://defects4j.org/->https://github.com/rjust/defects4j
 --suppress-redirect http://doi.acm.org/10.1145/1133981.1133992->https://dl.acm.org/action/cookieAbsent
+--suppress-redirect http://doi.acm.org/10.1145/1134285.1134491->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect http://doi.acm.org/10.1145/1146238.1146258->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect http://doi.acm.org/10.1145/1467247.1467259->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect http://doi.ieeecomputersociety.org/10.1109/ICSM.2005.37->http://www.computer.org/csdl/proceedings/icsm/2005/2368/00/23680401-abs.html
