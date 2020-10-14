@@ -49,6 +49,7 @@
 --suppress-broken 301:https://goo.gl/forms/H86dwbdiIDtsyCbG3
 --suppress-broken 301:https://goo.gl/forms/UUFpyNBqeiSJKlMm2
 --suppress-broken 301:https://tools.usps.com/go/ZipLookupAction!input.action
+--suppress-broken 301:https://www.nwfolklife.org/festival/
 
 # 302: official URL, but redirects elsewhere.  Also need to list in --suppress-redirect.
 --suppress-broken 302:http://dx.doi.org/10.1109/2.59
@@ -480,8 +481,8 @@
 --suppress-redirect http://www.verigames.com/login/google->https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=http%3A%2F%2Fwww.verigames.com%2Flogin%2Fgoogle%2Fcallback&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&client_id=451230570634.apps.googleusercontent.com&type=web_server
 --suppress-redirect http://www.weather.com/weather/local/USWA0395->http://xhtml.weather.com/xhtml/search
 --suppress-redirect http://yoav.zibin.googlepages.com/->http://www.google.com/gwt/n?source=pagecreator&u=http%3A%2F%2FYoav.Zibin.googlepages.com%2Fhome
---suppress-redirect https://dl.acm.org/citation.cfm?id=2568243->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=1065579.1065786->https://dl.acm.org/action/cookieAbsent
+--suppress-redirect https://dl.acm.org/citation.cfm?id=2568243->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=565816.503275->https://dl.acm.org/doi/10.1145/565816.503275
 --suppress-redirect https://dl.acm.org/citation.cfm?id=566171.566212->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=581377->https://dl.acm.org/doi/10.1145/581339.581377
@@ -496,6 +497,7 @@
 --suppress-redirect https://sqlshare.escience.washington.edu/->https://sqlshare.escience.washington.edu/accounts/login/?next=/sqlshare/
 --suppress-redirect https://tools.usps.com/go/ZipLookupAction!input.action->https://www.usps.com/root/global/server_responses/webtools-msg.htm
 --suppress-redirect https://tree-api.dev.java.net/->https://www.dev.java.net/servlets/Login?cookieCheck=failed
+--suppress-redirect https://www.nwfolklife.org/festival/->https://www.nwff2020.nwfolklifestreaming.org/
 
 --suppress-redirect-prefix http://cs.washington.edu/->http://www.cs.washington.edu/
 --suppress-redirect-prefix http://doi.acm.org/10.1145/->https://dl.acm.org/citation.cfm?doid=
