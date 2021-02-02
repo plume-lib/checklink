@@ -183,7 +183,9 @@
 --suppress-broken 405:https://www.linkedin.com/in/jinliny/
 --suppress-broken 405:https://www.linkedin.com/in/joewhaley
 --suppress-broken 405:https://www.linkedin.com/in/kevinmvu/
+--suppress-broken 405:https://www.linkedin.com/in/kjayaram/
 --suppress-broken 405:https://www.linkedin.com/in/manos-renieris-99b5531
+--suppress-broken 405:https://www.linkedin.com/in/serdar-tasiran-7841087/
 --suppress-broken 405:https://www.linkedin.com/in/steve-anton-944aa36b
 --suppress-broken 405:https://www.linkedin.com/in/suzanne-millstein-a3770956/
 --suppress-broken 406:http://kevinjsullivan.org/
