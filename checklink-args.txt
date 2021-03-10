@@ -497,6 +497,7 @@
 --suppress-redirect https://dl.acm.org/citation.cfm?id=2568243->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=565816.503275->https://dl.acm.org/doi/10.1145/565816.503275
 --suppress-redirect https://dl.acm.org/citation.cfm?id=566171.566212->https://dl.acm.org/action/cookieAbsent
+--suppress-redirect https://dl.acm.org/citation.cfm?id=581377->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=581377->https://dl.acm.org/doi/10.1145/581339.581377
 --suppress-redirect https://dl.acm.org/citation.cfm?id=998675.999449->https://dl.acm.org/action/cookieAbsent
 --suppress-redirect https://dl.acm.org/citation.cfm?id=J706->https://dl.acm.org/action/cookieAbsent
