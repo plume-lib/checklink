@@ -209,6 +209,7 @@
 --suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-ob.htm
 --suppress-broken 500:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 500:https://web.mit.edu/21.guide/www/toc.htm
+# End of 500 special cases
 
 ## General 500 section
 --suppress-broken 500:http://cgi.di.uoa.gr/~mema/courses/m131/reviews.pdf
@@ -240,6 +241,7 @@
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
 --suppress-broken 500:https://dblp.uni-trier.de/db/
 --suppress-broken 500:https://drona.csa.iisc.ac.in:443
+--suppress-broken 500:https://fair.org/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://hkn.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/
@@ -255,6 +257,7 @@
 --suppress-broken 500:https://web.mit.edu/6.033/www/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/staging/www/
+--suppress-broken 500:https://www.americanscientist.org/
 --suppress-broken 500:https://www.arl.army.mil/www/default.cfm?page=29
 --suppress-broken 500:https://www.baesystems.com/en/home
 --suppress-broken 500:https://www.brown.edu/
