@@ -30,6 +30,8 @@
 --exclude-docs mernst/(public_html/)?(meetings/ir95/|meetings/paste2005/|advice/conference/)
 --exclude-docs http://www.w3.org/1999/xhtml/vocab/
 --exclude-docs https://courses.cs.washington.edu/courses/cse599e1/16au/csenetid/
+# don't check release history directory containing previous .zip and .tar.gz files; takes too long
+--exclude-docs http://plse.cs.washington.edu/staging-daikon/history
 
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
 --suppress-broken 301:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
@@ -369,6 +371,7 @@
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Reading-dtrace-files.html#Reading-dtrace-files
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Requirements-for-compiling-Daikon.html#Requirements-for-compiling-Daikon
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Requirements-for-compiling-Kvasir.html#Requirements-for-compiling-Kvasir
+--suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Source-code-_0028version-control-repository_0029.html#c$Source-code-_0028version-control-repository_0029Requirements-for-compiling-Kvasir
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Track-logging.html#Track-logging
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Variable-comparability.html#Variable-comparability
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Variable-declarations.html#Variable-declarations
@@ -400,6 +403,7 @@
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Reading-dtrace-files.html#Reading-dtrace-files
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Requirements-for-compiling-Daikon.html#Requirements-for-compiling-Daikon
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Requirements-for-compiling-Kvasir.html#Requirements-for-compiling-Kvasir
+--suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Source-code-_0028version-control-repository_0029.html#c$Source-code-_0028version-control-repository_0029Requirements-for-compiling-Kvasir
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Track-logging.html#Track-logging
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Variable-comparability.html#Variable-comparability
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Variable-declarations.html#Variable-declarations
