@@ -167,6 +167,7 @@
 --suppress-broken 404:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://youtrack.jetbrains.com/issue/IDEA-159286
 --suppress-broken 405:http://aws.amazon.com/datasets
+--suppress-broken 405:http://billthies.net/
 --suppress-broken 405:http://code.activestate.com/recipes/langs/python/
 --suppress-broken 405:http://developer.android.com/tools/building/plugin-for-gradle.html
 --suppress-broken 405:http://dx.doi.org/10.1109/WODA.2007.3
