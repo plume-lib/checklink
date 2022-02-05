@@ -3,7 +3,7 @@ all: python-style test
 PYTHON_FILES=../checklink-persistent-errors
 
 python-style:
-	yapf -i --style='{column_limit: 100}' ${PYTHON_FILES}
+	black ${PYTHON_FILES}
 	pylint -f parseable --disable=W,line-too-long,invalid-name ${PYTHON_FILES}
 
 test: errors1.output errors2.output
