@@ -249,6 +249,7 @@
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_Spring_2014
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
 --suppress-broken 500:https://dblp.uni-trier.de/db/
+--suppress-broken 500:https://douglascayers.com/2015/05/30/how-to-set-custom-java-path-after-installing-jdk-8/       
 --suppress-broken 500:https://drona.csa.iisc.ac.in:443
 --suppress-broken 500:https://dspace.mit.edu/bitstream/handle/1721.1/40090/MIT-CSAIL-TR-2008-002.pdf
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/inference/
