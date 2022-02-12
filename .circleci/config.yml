@@ -18,7 +18,7 @@ jobs:
           paths:
             - ".git"
 
-      - run: pip3 install yapf pylint
+      - run: pip3 install black pylint
 
       - run: make -C tests
 
