@@ -1,10 +1,10 @@
-This file contains diffs of checklink revision 1d91dde (March 3, 2017),
+This file contains diffs of checklink revision b69597824315efd0a5f1f3cadc1129ba94603449 (Jan 4, 2022),
 against the modified version of checklink that appears in this directory.
 
-diff -u -b -r /home/mernst/bin/src/checklink-w3c/bin/checklink-20170303 /home/mernst/bin/src/checklink-w3c/bin/checklink
---- /home/mernst/bin/src/checklink-w3c/bin/checklink-20170303	2018-09-21 06:04:50.493256542 -0700
-+++ /home/mernst/bin/src/checklink-w3c/bin/checklink	2018-09-21 06:07:06.675596989 -0700
-@@ -23,6 +23,8 @@
+diff -u -b -r /home/mernst/bin/src/checklink-w3c/bin/checklink /home/mernst/bin/src/checklink/checklink
+--- /home/mernst/bin/src/checklink-w3c/bin/checklink	2021-12-15 09:19:44.366785520 -0800
++++ /home/mernst/bin/src/checklink/checklink	2022-03-21 09:31:47.067868264 -0700
+@@ -21,6 +21,8 @@
  
  use strict;
  use 5.008;
@@ -13,7 +13,7 @@ diff -u -b -r /home/mernst/bin/src/checklink-w3c/bin/checklink-20170303 /home/me
  
  # Get rid of potentially unsafe and unneeded environment variables.
  delete(@ENV{qw(IFS CDPATH ENV BASH_ENV)});
-@@ -45,7 +47,7 @@
+@@ -43,7 +45,7 @@
  use Net::HTTP::Methods 5.833 qw();    # >= 5.833 for 4kB cookies (#6678)
  
  # if 0, ignore robots exclusion (useful for testing)
@@ -22,7 +22,7 @@ diff -u -b -r /home/mernst/bin/src/checklink-w3c/bin/checklink-20170303 /home/me
  
  if (USE_ROBOT_UA) {
      @W3C::UserAgent::ISA = qw(LWP::RobotUA);
-@@ -221,6 +223,7 @@
+@@ -219,6 +221,7 @@
  use CSS::DOM::Style qw();
  use CSS::DOM::Util qw();
  use Encode qw();
@@ -30,7 +30,7 @@ diff -u -b -r /home/mernst/bin/src/checklink-w3c/bin/checklink-20170303 /home/me
  use HTML::Entities qw();
  use HTML::Parser 3.40 qw();    # >= 3.40 for utf8_mode()
  use HTTP::Headers::Util qw();
-@@ -1246,6 +1249,16 @@
+@@ -1278,6 +1281,16 @@
              }
          }
  
@@ -46,6 +46,4 @@ diff -u -b -r /home/mernst/bin/src/checklink-w3c/bin/checklink-20170303 /home/me
 +
          my $canon_uri = URI->new($abs_link_uri->canonical());
          my $fragment  = $canon_uri->fragment(undef);
-         if (!defined($Opts{Exclude}) || $canon_uri !~ $Opts{Exclude}) {
-
-Diff finished.  Fri Sep 21 06:07:19 2018
+         if (!should_exclude($canon_uri)) {

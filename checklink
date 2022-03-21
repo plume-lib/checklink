@@ -1,5 +1,3 @@
-#!/usr/bin/env perl
-# -w is like "use warnings;", which I have written below.  Give up on -T in order to use /usr/bin/env .
 #!/usr/bin/perl -wT
 #
 # W3C Link Checker
@@ -21,7 +19,6 @@
 #
 # Comments and suggestions should be filed on github
 
-use warnings;
 use strict;
 use 5.008;
 use English;
@@ -298,10 +295,10 @@ use constant LINK_LIST_ATTRS => {
     a      => [qr/\s+/, qr/$/,      [MC_BLOCK, 'ping']],
     applet => [qr/[\s,]+/, qr/$/,   [MC_BLOCK, 'archive']],
     area   => [qr/\s+/, qr/$/,      [MC_BLOCK, 'ping']],
-    img    => [qr/\s*,/, qr/\s+/,   [MC_BLOCK, 'srcset']],
+    img    => [qr/\s*,\s*/, qr/\s.*$/,   [MC_BLOCK, 'srcset']],
     head   => [qr/\s+/,  qr/$/,     [MC_NONE, 'profile']],
     object => [qr/\s+/,  qr/$/,     [MC_BLOCK, 'archive']],
-    source => [qr/[\s,]+/, qr/\s+/, [MC_BLOCK, 'srcset']]
+    source => [qr/\s*,\s*/, qr/\s.*$/, [MC_BLOCK, 'srcset']]
 };
 
 # TBD/TODO:
@@ -324,11 +321,8 @@ BEGIN {
     $VERSION  = '5.0.0';
     $REVISION = sprintf('version %s (c) 1999-2019 W3C', $VERSION);
     $AGENT    = sprintf(
-        '%s/%s %s',
-        $PROGRAM, $VERSION,
-        (   W3C::UserAgent::USE_ROBOT_UA ? LWP::RobotUA->_agent() :
-                LWP::UserAgent->_agent()
-        )
+        '%s/%s',
+        $PROGRAM, $VERSION
     );
 
     # Pull in mod_perl modules if applicable.
@@ -348,7 +342,7 @@ BEGIN {
     $ContentTypes = qr{\b(?:$re)\b}io;
 
     # Regexp for matching URL values in CSS.
-    $CssUrl = qr/(?:\s|^)url\(\s*(['"]?)(.*?)\1\s*\)(?=\s|$)/;
+    $CssUrl = qr/url\(\s*(['"]?)(.*?)\1\s*\)/;
 
     #
     # Read configuration.  If the W3C_CHECKLINK_CFG environment variable has
@@ -743,7 +737,7 @@ sub parse_arguments ()
                 if $Opts{Depth} == 0;
         },
         'l|location=s'                => \@locs,
-        'X|exclude=s'                 => \$Opts{Exclude},
+        'X|exclude=s@'                => \@{$Opts{Exclude}},
         'exclude-docs=s@'             => \@{$Opts{Exclude_Docs}},
         'follow-file-links'           => \$Opts{Follow_File_Links},
         'https'                       => \$Opts{Https},
@@ -808,8 +802,8 @@ sub parse_arguments ()
     $Opts{Depth} = -1 if ($Opts{Depth} == 0 && @locs);
 
     # Precompile/error-check regular expressions.
-    if (defined($Opts{Exclude})) {
-        eval { $Opts{Exclude} = qr/$Opts{Exclude}/o; };
+    for my $i (0 .. $#{$Opts{Exclude}}) {
+        eval { $Opts{Exclude}->[$i] = qr/$Opts{Exclude}->[$i]/; };
         &usage(1, "Error in exclude regexp: $@") if $@;
     }
     for my $i (0 .. $#{$Opts{Exclude_Docs}}) {
@@ -900,6 +894,7 @@ Options:
  -X, --exclude REGEXP       Do not check links whose full, canonical URIs
                             match REGEXP; also limits recursion the same way
                             as --exclude-docs with the same regexp would.
+                            This option may be specified multiple times.
  --exclude-docs REGEXP      In recursive mode, do not check links in documents
                             whose full, canonical URIs match REGEXP.  This
                             option may be specified multiple times.
@@ -1056,6 +1051,15 @@ sub urize ($)
     return $uri->canonical();
 }
 
+sub should_exclude ($)
+{
+    my ($canon_uri) = @_;
+    for my $ex (@{$Opts{Exclude}}) {
+        return 1 if ($canon_uri =~ $ex);
+    }
+    return 0;
+}
+
 ########################################
 # Check for broken links in a resource #
 ########################################
@@ -1155,8 +1159,9 @@ Settings used:
 - Upgrade-Insecure-Requets: 1
 - Sleeping %d second%s between requests to each server
 EOF
-        printf("- Excluding links matching %s\n", $Opts{Exclude})
-            if defined($Opts{Exclude});
+        printf("- Excluding links matching %s\n",
+            join(', ', @{$Opts{Exclude}}))
+            if @{$Opts{Exclude}};
         printf("- Excluding links in documents whose URIs match %s\n",
             join(', ', @{$Opts{Exclude_Docs}}))
             if @{$Opts{Exclude_Docs}};
@@ -1221,6 +1226,9 @@ EOF
     my $p =
         &parse_document($uri, $response->base(), $response, 1, ($depth != 0));
     my $base = URI->new($p->{base});
+    if (!defined($base->scheme)) {
+        $base = URI->new_abs($p->{base}, $uri);
+    }
     my $check_mixed_content = ($base->scheme eq 'https' || $Opts{Https});
 
     # Check anchors
@@ -1285,7 +1293,7 @@ EOF
 
         my $canon_uri = URI->new($abs_link_uri->canonical());
         my $fragment  = $canon_uri->fragment(undef);
-        if (!defined($Opts{Exclude}) || $canon_uri !~ $Opts{Exclude}) {
+        if (!should_exclude($canon_uri)) {
             if (!exists($links{$canon_uri})) {
                 my $hostport;
                 $hostport = $canon_uri->host_port()
@@ -1297,12 +1305,13 @@ EOF
                 my @mixedcontent = keys(%{%$lines{$line_num}});
                 my $mc_block = MC_BLOCK;
                 if (grep(/^$mc_block$/, @mixedcontent)) {
+
                     push(@{$links{$canon_uri}{mixedcontent}}, $line_num);
                 }
                 # take optional into account if CSP: block-all-mixed-content is set
                 my $mc_optional = MC_OPTIONAL;
-                if (grep(/^block-all-mixed-content$/, @{$p->{csp}})
-                    && grep(/^mc_optional$/, @mixedcontent)) {
+                if ($p->{csp} && grep(qr/^block-all-mixed-content$/, $p->{csp})
+                    && grep(/^$mc_optional$/, @mixedcontent)) {
                     push(@{$links{$canon_uri}{mixedcontent}}, $line_num);
                 }
                 if (!defined($fragment) || !length($fragment)) {
@@ -1369,7 +1378,7 @@ EOF
 
             # List the broken fragments
             while (my ($fragment, $lines) = each(%{$ulinks->{fragments}})) {
-                my $fragment_ok = $results{$u}{fragments}{$fragment}
+                my $fragment_broken = $results{$u}{fragments}{$fragment} == 0
                 # 100 matches what we get for ignored error codes
                 || $results{$u}{location}{code} == 100;
                 if ($Opts{Verbose}) {
@@ -1377,14 +1386,14 @@ EOF
                     &hprintf(
                         "\t\t%s %s - Line%s: %s\n",
                         $fragment,
-                        $fragment_ok             ? 'OK' : 'Not found',
+                        $fragment_broken             ? 'Not found' : ( $results{$u}{fragments}{$fragment} > 0 ? 'OK' : 'Not checked'),
                         (scalar(@line_nums) > 1) ? 's'  : '',
                         join(', ', @line_nums)
                     );
                 }
 
                 # A broken fragment?
-                $broken{$u}{fragments}{$fragment} += 2 unless $fragment_ok;
+                $broken{$u}{fragments}{$fragment} += 2 if $fragment_broken;
             }
         }
         elsif (!($Opts{Quiet} && defined($results{$u}{location}{code}) && &informational($results{$u}{location}{code})))
@@ -1642,7 +1651,7 @@ sub in_recursion_scope (\$)
 
     my $candidate = $uri->canonical();
 
-    return 0 if (defined($Opts{Exclude}) && $candidate =~ $Opts{Exclude});
+    return 0 if should_exclude($candidate);
 
     for my $excluded_doc (@{$Opts{Exclude_Docs}}) {
         return 0 if ($candidate =~ $excluded_doc);
@@ -1842,7 +1851,7 @@ sub record_results (\$$$$\@)
     # dealing with mixed content
     if ($mixedcontent_lines && $uri->scheme ne 'https') {
         # Check headers of CSP: upgrade-insecure-request
-        if (! ($uri->scheme eq 'http' && grep(/^upgrade-insecure-requests$/, @csp))) {
+        if (! ($uri->scheme eq 'http' && $#csp != 0 && grep(/^upgrade-insecure-requests$/, @csp))) {
             # Set this the lines where the URL is used in mixedcontent_block context
             $results{$uri}{mixedcontent_blocked} = $mixedcontent_lines;
         }
@@ -2161,6 +2170,7 @@ sub start
             for my $attrdesc (@$link_attrs) {
                 my ($mixedcontent, $la) = @$attrdesc;
                 my $attributes = [];
+                my $skip = 0;
                 if ($mixedcontent == MC_CONDITIONAL) {
                     if ($tag eq 'img') {
                         if ($attr->{crossorigin}) {
@@ -2178,11 +2188,23 @@ sub start
                             }
                         }
                         if ($mixedcontent == MC_CONDITIONAL) {
-                            $mixedcontent = MC_OPTIONAL;
+                            $mixedcontent = MC_NONE;
                         }
                     }
                 }
-                $self->add_link($attr->{$la}, $tag_local_base, $line, $mixedcontent);
+                if ($tag eq 'link') {
+                    my @skipped_link_types = ('preconnect', 'dns-prefetch');
+                    my @link_types = map{ lc($_)} split(/\s+/, $attr->{rel});
+                    for my $type (@link_types) {
+                        if ( grep (/^$type$/, @skipped_link_types)) {
+                            $skip = 1;
+                            last;
+                        }
+                    }
+                }
+                if (!$skip) {
+                    $self->add_link($attr->{$la}, $tag_local_base, $line, $mixedcontent);
+                }
             }
         }
 
@@ -2310,6 +2332,24 @@ sub end_document
     return;
 }
 
+sub validate_pdf_fragment
+{
+    my ($uri, $fragments) = @_;
+    mark_fragments_as_not_checked($uri, $fragments);
+    # TODO: Check the rules defined in
+    # https://pdfobject.com/pdf/pdf_open_parameters_acro8.pdf
+    return;
+}
+
+sub mark_fragments_as_not_checked
+{
+    my ($uri, $fragments) = @_;
+    for my $fragment (keys %$fragments) {
+        $results{$uri}{fragments}{$fragment} = -1;
+    }
+    return;
+}
+
 ################################
 # Check the validity of a link #
 ################################
@@ -2358,18 +2398,23 @@ sub check_validity (\$\$$\%\%\$\$)
     # There are fragments. Parse the document.
     my $p;
     if ($being_processed) {
-
-        # Can we really parse the document?
         if (!defined($results{$uri}{location}{type})) {
             &hprintf("Can't check content: Content-Type for '%s' is undefined.\n",
                 $uri)
                 if ($Opts{Verbose});
             $response->content("");
             return;
+        } elsif ($results{$uri}{location}{type} =~ "application/pdf") {
+            validate_pdf_fragment($uri, $fragments);
+            $response->content("");
+            return;
         } elsif ($results{$uri}{location}{type} !~ $ContentTypes) {
             &hprintf("Can't check content: Content-Type for '%s' is '%s'.\n",
                 $uri, $results{$uri}{location}{type})
                 if ($Opts{Verbose});
+            # TODO: find content types for which fragment are defined
+            # Maybe starting from https://en.wikipedia.org/wiki/URI_fragment#Examples
+            mark_fragments_as_not_checked($uri, $fragments);
             $response->content("");
             return;
         }
@@ -2378,7 +2423,6 @@ sub check_validity (\$\$$\%\%\$\$)
         if (my $error = decode_content($response)) {
             &hprintf("%s\n.", $error);
         }
-
         # @@@TODO: this isn't the best thing to do if a decode error occurred
         $p =
             &parse_document($uri, $response->base(), $response, 0,
@@ -2394,6 +2438,10 @@ sub check_validity (\$\$$\%\%\$\$)
     for my $fragment (keys %$fragments) {
         if (defined($p->{Anchors}{$fragment}) ||
             &escape_match($fragment, $p->{Anchors}) ||
+            # per https://html.spec.whatwg.org/multipage/browsing-the-web.html#scroll-to-fragid:ascii-case-insensitive
+            # 'top' is always a valid fragment in HTML
+            (!$response->{IsCss} && $fragment eq 'top') ||
+            # TODO #top is OK in HTML documents
             grep { $_ eq "$uri#$fragment" } @{$Opts{Suppress_Fragment}})
         {
             $results{$uri}{fragments}{$fragment} = 1;
@@ -2719,14 +2767,6 @@ will <em>not</em> be able to follow this link.';
             }
             else {
                 $whattodo = $todo->{$c};
-                if (! defined($whattodo)) {
-                    if (! defined($todo)) {
-                        $whattodo = "No whattodo for undefined todo";
-                    } else {
-                        $whattodo = "No whattodo for code $c";
-                        print map { "$_ => $todo=>{$_}\n" } sort keys %$todo;
-                    }
-                }
             }
         }
         elsif (defined($redirects{$u})) {
@@ -2820,7 +2860,7 @@ will <em>not</em> be able to follow this link.';
                 $http_message,
 
                 # What to do
-                $whattodo,
+                $whattodo || "?",
 
                 # Redirect too?
                 $redirect_too ?
@@ -3085,7 +3125,7 @@ EOF
                 printf('<td><a href="#d%scode_%s">%s</a></td>',
                     $doc_count, $code, http_rc($code));
                 printf('<td>%s</td>', $code_summary{$code});
-                printf('<td>%s</td>', $todo{$code});
+                printf('<td>%s</td>', $todo{$code} || "?");
                 print "</tr>\n";
             }
             print "</tbody>\n</table>\n";
