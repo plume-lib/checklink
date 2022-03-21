@@ -249,11 +249,12 @@
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_Spring_2014
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
 --suppress-broken 500:https://dblp.uni-trier.de/db/
---suppress-broken 500:https://douglascayers.com/2015/05/30/how-to-set-custom-java-path-after-installing-jdk-8/       
+--suppress-broken 500:https://douglascayers.com/2015/05/30/how-to-set-custom-java-path-after-installing-jdk-8/
 --suppress-broken 500:https://drona.csa.iisc.ac.in:443
 --suppress-broken 500:https://dspace.mit.edu/bitstream/handle/1721.1/40090/MIT-CSAIL-TR-2008-002.pdf
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/inference/
 --suppress-broken 500:https://en.wikipedia.org/wiki/Dependability
+--suppress-broken 500:https://en.wikipedia.org/wiki/Term_algebra
 --suppress-broken 500:https://fair.org/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://groups.inf.ed.ac.uk/cup/comment-locator/
@@ -272,6 +273,7 @@
 --suppress-broken 500:https://sttt.cs.uni-dortmund.de/
 --suppress-broken 500:https://subversion.apache.org/
 --suppress-broken 500:https://support.apple.com/kb/ph11523?locale=en_US
+--suppress-broken 500:https://toddschiller.com/
 --suppress-broken 500:https://travis-ci.org/randoop/randoop
 --suppress-broken 500:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 500:https://verdi.uwplse.org/
@@ -288,8 +290,11 @@
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/laptjavac/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/xajavac/
 --suppress-broken 500:https://www.cs.rutgers.edu/~vinodg/papers/tdsc2011/tdsc2011.pdf
+--suppress-broken 500:https://www.cs.ubc.ca/~bestchai/
+--suppress-broken 500:https://www.cs.ubc.ca/~wolf/
 --suppress-broken 500:https://www.cs.washington.edu/internal/
 --suppress-broken 500:https://www.cs.washington.edu/internal/calendars/
+--suppress-broken 500:https://www.csail.mit.edu/
 --suppress-broken 500:https://www.dwheeler.com/sloccount/
 --suppress-broken 500:https://www.enthought.com/accounts/register/?next=/licenses/academic
 --suppress-broken 500:https://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii/
@@ -297,6 +302,7 @@
 --suppress-broken 500:https://www.inf.usi.ch/faculty/pezze/
 --suppress-broken 500:https://www.inf.usi.ch/phd/blasia/
 --suppress-broken 500:https://www.inf.usi.ch/phd/blasia/
+--suppress-broken 500:https://www.martinschaef.de/
 --suppress-broken 500:https://www.mercurial-scm.org/wiki/FAQ
 --suppress-broken 500:https://www.mercurial-scm.org/wiki/NotifyExtension
 --suppress-broken 500:https://www.mpi-sws.org/
