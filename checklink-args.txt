@@ -244,6 +244,7 @@
 --suppress-broken 500:https://api.travis-ci.org/randoop/randoop.svg?branch=master
 --suppress-broken 500:https://blog.techhit.com/551102-how-to-prevent-outlook-from-adding-line-breaks-to-sent-plain-text-messages
 --suppress-broken 500:https://blogs.oracle.com/darcy/so-you-want-to-change-the-java-programming-language
+--suppress-broken 500:https://canvas.uw.edu/courses/1545328
 --suppress-broken 500:https://cascade.org/
 --suppress-broken 500:https://conf.researchr.org/home/issta-2018
 --suppress-broken 500:https://cra.org/resources/best-practice-memos/evaluating-computer-scientists-and-engineers-for-promotion-and-tenure/
