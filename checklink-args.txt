@@ -158,6 +158,7 @@
 --suppress-broken 404:https://search.maven.org/search?q=g:org.checkerframework
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework.annotatedlib
+--suppress-broken 404:https://support.google.com/calendar/answer/37100
 --suppress-broken 404:https://types.cs.washington.edu/plume-lib/api/resources/fonts/dejavu.css
 --suppress-broken 404:https://types.cs.washington.edu/plume-lib/guide/collections/index.html
 --suppress-broken 404:https://www.darpa.mil
