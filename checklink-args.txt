@@ -243,6 +243,7 @@
 --suppress-broken 500:http://www.selenic.com/mercurial/hgrc.5.html
 --suppress-broken 500:http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
 --suppress-broken 500:https://api.travis-ci.org/randoop/randoop.svg?branch=master
+--suppress-broken 500:https://asm.ow2.io/
 --suppress-broken 500:https://blog.techhit.com/551102-how-to-prevent-outlook-from-adding-line-breaks-to-sent-plain-text-messages
 --suppress-broken 500:https://blogs.oracle.com/darcy/so-you-want-to-change-the-java-programming-language
 --suppress-broken 500:https://canvas.uw.edu/courses/1545328
@@ -264,7 +265,9 @@
 --suppress-broken 500:https://ecoop08.cs.ucy.ac.cy/
 --suppress-broken 500:https://en.wikipedia.org/wiki/Comma-separated_values
 --suppress-broken 500:https://en.wikipedia.org/wiki/Dependability
+--suppress-broken 500:https://en.wikipedia.org/wiki/Live_variable_analysis
 --suppress-broken 500:https://en.wikipedia.org/wiki/Main_Page
+--suppress-broken 500:https://en.wikipedia.org/wiki/SI_prefix
 --suppress-broken 500:https://en.wikipedia.org/wiki/Term_algebra
 --suppress-broken 500:https://errorprone.info/
 --suppress-broken 500:https://fair.org/
@@ -286,6 +289,8 @@
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
 --suppress-broken 500:https://people.lu.usi.ch/goffia/
 --suppress-broken 500:https://researcher.watson.ibm.com/researcher/view.php?person=us-dolby
+--suppress-broken 500:https://ricken.us/research/laptjavac/
+--suppress-broken 500:https://ricken.us/research/xajavac/
 --suppress-broken 500:https://shuttleexpress.com/seattle-seatac-airport-transportation/
 --suppress-broken 500:https://shuttleexpress.com/seattle/airport/scheduled-hotel-service-to-seatac/
 --suppress-broken 500:https://software.imdea.org/~alessandra.gorla/
@@ -347,6 +352,7 @@
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/publications/files/schuler-issta-2009.pdf
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/zeller/
 --suppress-broken 500:https://www.valgrind.org/
+--suppress-broken 500:https://yaml.org/
 --suppress-broken 501:http://www.bizrate.com/
 --suppress-broken 501:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 501:https://web.mit.edu/21.guide/www/toc.htm
