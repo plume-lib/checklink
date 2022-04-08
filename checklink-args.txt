@@ -266,6 +266,7 @@
 --suppress-broken 500:https://en.wikipedia.org/wiki/Dependability
 --suppress-broken 500:https://en.wikipedia.org/wiki/Main_Page
 --suppress-broken 500:https://en.wikipedia.org/wiki/Term_algebra
+--suppress-broken 500:https://errorprone.info/
 --suppress-broken 500:https://fair.org/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://groups.inf.ed.ac.uk/cup/comment-locator/
