@@ -400,6 +400,7 @@
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.2
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.3
 --suppress-fragment https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A
+--suppress-fragment https://github.com/google/google-java-format#using-the-formatter
 --suppress-fragment https://github.com/kelloggm/checkerframework-gradle-plugin#incompatibility-with-error-prone
 --suppress-fragment https://github.com/rjust/defects4j#requirements
 --suppress-fragment https://github.com/uber/okbuck/wiki/Using-Error-Prone-with-Buck-and-OkBuck#using-error-prone-javac-on-jdk-8
