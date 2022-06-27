@@ -33,6 +33,8 @@
 # don't check release history directory containing previous .zip and .tar.gz files; takes too long
 --exclude-docs http://plse.cs.washington.edu/staging-daikon/history
 
+--suppress-broken 100:https://www.mercurial-scm.org/wiki/FAQ
+
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
 --suppress-broken 301:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
 --suppress-broken 301:http://doi.acm.org/10.1145/1134285.1134491
@@ -229,6 +231,7 @@
 --suppress-broken 500:http://localhost:8080/
 --suppress-broken 500:http://localhost:8080/subscribers
 --suppress-broken 500:http://localhost:8080/swagger-ui.html
+--suppress-broken 500:http://www.cs.utep.edu/cheon/
 --suppress-broken 500:http://www.eclipse.org/
 --suppress-broken 500:http://www.eclipse.org/documentation/
 --suppress-broken 500:http://www.eclipse.org/downloads/
@@ -253,9 +256,12 @@
 --suppress-broken 500:https://brew.sh/
 --suppress-broken 500:https://canvas.uw.edu/courses/1545328
 --suppress-broken 500:https://cascade.org/
+--suppress-broken 500:https://chenglongwang.org/
+--suppress-broken 500:https://cnandi.com/
 --suppress-broken 500:https://commons.apache.org/proper/commons-bcel/index.html
 --suppress-broken 500:https://conf.researchr.org/home/issta-2018
 --suppress-broken 500:https://cra.org/resources/best-practice-memos/evaluating-computer-scientists-and-engineers-for-promotion-and-tenure/
+--suppress-broken 500:https://cs.uwaterloo.ca/~csk/
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_Spring_2014
 --suppress-broken 500:https://cubist.cs.washington.edu/wiki/index.php/CSE403_spring_2014_proposal_pairs
 --suppress-broken 500:https://dancestore.com/
@@ -265,6 +271,8 @@
 --suppress-broken 500:https://drona.csa.iisc.ac.in:443
 --suppress-broken 500:https://dspace.mit.edu/bitstream/handle/1721.1/40090/MIT-CSAIL-TR-2008-002.pdf
 --suppress-broken 500:https://dspace.mit.edu/handle/1721.1/61250
+--suppress-broken 500:https://earlbarr.com/
+--suppress-broken 500:https://ece.uwaterloo.ca/~vganesh/
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/inference/
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/ownership/
@@ -278,11 +286,13 @@
 --suppress-broken 500:https://en.wikipedia.org/wiki/Sql_injection
 --suppress-broken 500:https://en.wikipedia.org/wiki/Term_algebra
 --suppress-broken 500:https://errorprone.info/
+--suppress-broken 500:https://faculty.washington.edu/ajko/
 --suppress-broken 500:https://fair.org/
 --suppress-broken 500:https://fbinfer.com/docs/next/checker-eradicate/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://groups.inf.ed.ac.uk/cup/comment-locator/
 --suppress-broken 500:https://hkn.mit.edu/
+--suppress-broken 500:https://homepages.inf.ed.ac.uk/csutton/
 --suppress-broken 500:https://ianparberry.com/pubs/referee.pdf
 --suppress-broken 500:https://ianparberry.com/pubs/speaker.pdf
 --suppress-broken 500:https://jcip.net/
@@ -294,6 +304,7 @@
 --suppress-broken 500:https://lafhis.dc.uba.ar/users/~diegog/thesis/tesis_garbervetsky.pdf
 --suppress-broken 500:https://lafhis.dc.uba.ar/~diegog
 --suppress-broken 500:https://lazaroclapp.com/preprints/fse19-nullaway.pdf
+--suppress-broken 500:https://manu.sridharan.net/
 --suppress-broken 500:https://maven.apache.org/
 --suppress-broken 500:https://mercurial-scm.org/
 --suppress-broken 500:https://music.washington.edu/events
@@ -301,6 +312,7 @@
 --suppress-broken 500:https://onebusaway.org/
 --suppress-broken 500:https://pag.csail.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
+--suppress-broken 500:https://pavpanchekha.com/
 --suppress-broken 500:https://people.lu.usi.ch/goffia/
 --suppress-broken 500:https://projectlombok.org/
 --suppress-broken 500:https://projectlombok.org/features/delombok
@@ -313,6 +325,7 @@
 --suppress-broken 500:https://software.imdea.org/~alessandra.gorla/
 --suppress-broken 500:https://software.imdea.org/~alessandra.gorla/
 --suppress-broken 500:https://software.imdea.org/~alessandra.gorla/
+--suppress-broken 500:https://software.imdea.org/~juanca/
 --suppress-broken 500:https://sourceforge.net/projects/tide/
 --suppress-broken 500:https://stackoverflow.com/questions/32915721/documentation-for-annotation-processors-buck
 --suppress-broken 500:https://sttt.cs.uni-dortmund.de/
@@ -331,6 +344,7 @@
 --suppress-broken 500:https://web.mit.edu/6.033/www/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/
 --suppress-broken 500:https://web.mit.edu/6.170/staff/staging/www/
+--suppress-broken 500:https://wills.co.tt/
 --suppress-broken 500:https://www.aclu.org/
 --suppress-broken 500:https://www.afrl.af.mil/AFOSR/
 --suppress-broken 500:https://www.americanscientist.org/
@@ -345,11 +359,14 @@
 --suppress-broken 500:https://www.cs.rutgers.edu/~vinodg/papers/tdsc2011/tdsc2011.pdf
 --suppress-broken 500:https://www.cs.ubc.ca/~bestchai/
 --suppress-broken 500:https://www.cs.ubc.ca/~bestchai/papers/texada-ase15_final.pdf
+--suppress-broken 500:https://www.cs.ubc.ca/~rtholmes/
 --suppress-broken 500:https://www.cs.ubc.ca/~wolf/
 --suppress-broken 500:https://www.cs.washington.edu/internal/
 --suppress-broken 500:https://www.cs.washington.edu/internal/calendars/
 --suppress-broken 500:https://www.csail.mit.edu/
+--suppress-broken 500:https://www.dericpang.com/
 --suppress-broken 500:https://www.dwheeler.com/sloccount/
+--suppress-broken 500:https://www.eecs.mit.edu/
 --suppress-broken 500:https://www.eff.org/
 --suppress-broken 500:https://www.enthought.com/accounts/register/?next=/licenses/academic
 --suppress-broken 500:https://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii/
@@ -368,12 +385,15 @@
 --suppress-broken 500:https://www.mpi-sws.org/
 --suppress-broken 500:https://www.mpi-sws.org/~roseh/JobSearch.html
 --suppress-broken 500:https://www.onr.navy.mil/
+--suppress-broken 500:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 500:https://www.portlandjugglers.org/
+--suppress-broken 500:https://www.scientificamerican.com/
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/publications/files/schuler-issta-2009.pdf
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/zeller/
 --suppress-broken 500:https://www.valgrind.org/
 --suppress-broken 500:https://yaml.org/
 --suppress-broken 500:https://youtrack.jetbrains.com/issue/IDEA-159286
+--suppress-broken 500:https://zhen-zhang.com/
 --suppress-broken 501:http://www.bizrate.com/
 --suppress-broken 501:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 501:https://web.mit.edu/21.guide/www/toc.htm
