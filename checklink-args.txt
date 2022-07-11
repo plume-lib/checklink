@@ -307,6 +307,7 @@
 --suppress-broken 500:https://manu.sridharan.net/
 --suppress-broken 500:https://maven.apache.org/
 --suppress-broken 500:https://mercurial-scm.org/
+--suppress-broken 500:https://mir.cs.illinois.edu/~marinov/
 --suppress-broken 500:https://music.washington.edu/events
 --suppress-broken 500:https://netbeans.apache.org/wiki/Java_DevelopersGuide.asciidoc
 --suppress-broken 500:https://onebusaway.org/
@@ -335,6 +336,7 @@
 --suppress-broken 500:https://toddschiller.com/
 --suppress-broken 500:https://travis-ci.org/randoop/randoop
 --suppress-broken 500:https://ugradnews.cs.washington.edu/category/research/
+--suppress-broken 500:https://user.it.uu.se/~johos902/
 --suppress-broken 500:https://users.elis.ugent.be/aadebug2003/
 --suppress-broken 500:https://valgrind.org/
 --suppress-broken 500:https://valgrind.org/downloads/current.html
@@ -371,6 +373,7 @@
 --suppress-broken 500:https://www.enthought.com/accounts/register/?next=/licenses/academic
 --suppress-broken 500:https://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii/
 --suppress-broken 500:https://www.gnu.org/software/texinfo/manual/texinfo/texinfo.html
+--suppress-broken 500:https://www.iandrosos.me/
 --suppress-broken 500:https://www.inf.usi.ch/carzaniga/
 --suppress-broken 500:https://www.inf.usi.ch/faculty/pezze/
 --suppress-broken 500:https://www.inf.usi.ch/phd/blasia/
