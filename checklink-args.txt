@@ -250,6 +250,7 @@
 --suppress-broken 500:https://ant.apache.org/
 --suppress-broken 500:https://api.travis-ci.org/randoop/randoop.svg?branch=master
 --suppress-broken 500:https://asm.ow2.io/
+--suppress-broken 500:https://billthies.net/
 --suppress-broken 500:https://blog.jooq.org/jsr-308-and-the-checker-framework-add-even-more-typesafety-to-jooq-3-9/
 --suppress-broken 500:https://blog.techhit.com/551102-how-to-prevent-outlook-from-adding-line-breaks-to-sent-plain-text-messages
 --suppress-broken 500:https://blogs.oracle.com/darcy/so-you-want-to-change-the-java-programming-language
@@ -288,6 +289,7 @@
 --suppress-broken 500:https://errorprone.info/
 --suppress-broken 500:https://faculty.washington.edu/ajko/
 --suppress-broken 500:https://fair.org/
+--suppress-broken 500:https://fbinfer.com/
 --suppress-broken 500:https://fbinfer.com/docs/next/checker-eradicate/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://groups.inf.ed.ac.uk/cup/comment-locator/
@@ -308,8 +310,10 @@
 --suppress-broken 500:https://maven.apache.org/
 --suppress-broken 500:https://mercurial-scm.org/
 --suppress-broken 500:https://mir.cs.illinois.edu/~marinov/
+--suppress-broken 500:https://muse.engineering.illinois.edu/files/2017/08/10-Salient-Practices-for-UG-Research-Mentors.pdf
 --suppress-broken 500:https://music.washington.edu/events
 --suppress-broken 500:https://netbeans.apache.org/wiki/Java_DevelopersGuide.asciidoc
+--suppress-broken 500:https://nwfolklife.org/
 --suppress-broken 500:https://onebusaway.org/
 --suppress-broken 500:https://pag.csail.mit.edu/
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
@@ -391,6 +395,7 @@
 --suppress-broken 500:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 500:https://www.portlandjugglers.org/
 --suppress-broken 500:https://www.scientificamerican.com/
+--suppress-broken 500:https://www.seattleweekly.com/
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/publications/files/schuler-issta-2009.pdf
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/zeller/
 --suppress-broken 500:https://www.valgrind.org/
