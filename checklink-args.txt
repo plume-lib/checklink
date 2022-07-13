@@ -153,6 +153,7 @@
 --suppress-broken 404:http://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://calendar.google.com/calendar/embed?src=mernst%40cs.washington.edu&title=Michael%20Ernst&mode=WEEK
 --suppress-broken 404:https://circleci.com/dashboard
+--suppress-broken 404:https://dev.azure.com/
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=1&branchName=master
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=2&branchName=master
 --suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.3.0/randoop-4.3.0.zip
@@ -280,9 +281,12 @@
 --suppress-broken 500:https://ecoop08.cs.ucy.ac.cy/
 --suppress-broken 500:https://en.wikibooks.org/wiki/F_Sharp_Programming/Units_of_Measure
 --suppress-broken 500:https://en.wikipedia.org/wiki/Comma-separated_values
+--suppress-broken 500:https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)
 --suppress-broken 500:https://en.wikipedia.org/wiki/Dependability
+--suppress-broken 500:https://en.wikipedia.org/wiki/Liskov_substitution_principle
 --suppress-broken 500:https://en.wikipedia.org/wiki/Live_variable_analysis
 --suppress-broken 500:https://en.wikipedia.org/wiki/Main_Page
+--suppress-broken 500:https://en.wikipedia.org/wiki/R%C3%A9sum%C3%A9
 --suppress-broken 500:https://en.wikipedia.org/wiki/SI_prefix
 --suppress-broken 500:https://en.wikipedia.org/wiki/Sql_injection
 --suppress-broken 500:https://en.wikipedia.org/wiki/Term_algebra
