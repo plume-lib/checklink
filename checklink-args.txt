@@ -376,7 +376,7 @@
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Reading-dtrace-files.html#Reading-dtrace-files
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Requirements-for-compiling-Daikon.html#Requirements-for-compiling-Daikon
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Requirements-for-compiling-Kvasir.html#Requirements-for-compiling-Kvasir
---suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Source-code-_0028version-control-repository_0029.html#c$Source-code-_0028version-control-repository_0029Requirements-for-compiling-Kvasir
+--suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Source-code-_0028version-control-repository_0029.html#Source-code-_0028version-control-repository_0029
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Track-logging.html#Track-logging
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Variable-comparability.html#Variable-comparability
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Variable-declarations.html#Variable-declarations
@@ -408,7 +408,7 @@
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Reading-dtrace-files.html#Reading-dtrace-files
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Requirements-for-compiling-Daikon.html#Requirements-for-compiling-Daikon
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Requirements-for-compiling-Kvasir.html#Requirements-for-compiling-Kvasir
---suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Source-code-_0028version-control-repository_0029.html#c$Source-code-_0028version-control-repository_0029Requirements-for-compiling-Kvasir
+--suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Source-code-_0028version-control-repository_0029.html#Source-code-_0028version-control-repository_0029
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Track-logging.html#Track-logging
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Variable-comparability.html#Variable-comparability
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Variable-declarations.html#Variable-declarations
