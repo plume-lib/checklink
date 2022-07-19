@@ -136,9 +136,9 @@
 --suppress-broken 403:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
 --suppress-broken 403:https://www.addresses.com/phone
+--suppress-broken 403:https://www.congress.gov/
 --suppress-broken 403:https://www.dwheeler.com/sloccount/
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
---suppress-broken 403:https://www.mysimon.com/
 --suppress-broken 404:http://parks.state.wa.us/459/Blewett-I-90
 --suppress-broken 404:http://plumelib.org/bcel-util/api/resources/fonts/dejavu.css
 --suppress-broken 404:http://plumelib.org/lookup/api/resources/fonts/dejavu.css
@@ -473,6 +473,7 @@
 --suppress-fragment https://groups.google.com/forum/#!overview
 --suppress-fragment https://homes.cs.washington.edu/~mernst/pubs/pluggable-checkers-icse2011.pdf#page=3
 --suppress-fragment https://htmlpreview.github.io/?https://bitbucket.org/typetools/jsr308-langtools/raw/tip/doc/README-jsr308.html#reporting-bugs
+--suppress-fragment https://www.mercurial-scm.org/wiki/FAQ#FAQ.2FCommonProblems.Why_won.27t_Mercurial_let_me_merge_when_I_have_uncommitted_changes.3F  
 
 # This next group of suppress-fragments are required because makeinfo does the
 # chapter splits using indirect references through stub files.
