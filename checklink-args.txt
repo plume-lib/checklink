@@ -46,6 +46,7 @@
 --suppress-broken 301:http://www.nwfolklife.org/festival/
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=1065944.1065956
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=202530
+--suppress-broken 301:https://dl.acm.org/citation.cfm?id=3136872
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=565816.503275
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=581377
 --suppress-broken 301:https://dl.acm.org/citation.cfm?id=J706
