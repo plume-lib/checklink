@@ -311,6 +311,7 @@
 --suppress-broken 500:https://lafhis.dc.uba.ar/users/~diegog/thesis/tesis_garbervetsky.pdf
 --suppress-broken 500:https://lafhis.dc.uba.ar/~diegog
 --suppress-broken 500:https://lazaroclapp.com/preprints/fse19-nullaway.pdf
+--suppress-broken 500:https://link.springer.com/chapter/10.1007/978-3-642-16612-9_1
 --suppress-broken 500:https://manu.sridharan.net/
 --suppress-broken 500:https://maven.apache.org/
 --suppress-broken 500:https://mercurial-scm.org/
@@ -363,6 +364,7 @@
 --suppress-broken 500:https://www.baesystems.com/en/home
 --suppress-broken 500:https://www.bennostein.org/ase18.pdf
 --suppress-broken 500:https://www.brown.edu/
+--suppress-broken 500:https://www.cercs.gatech.edu/www.cercs.gatech.edu/tech-reports/tr2005/git-cercs-05-10.pdf
 --suppress-broken 500:https://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 --suppress-broken 500:https://www.cs.nmsu.edu/~jcook/woda2003/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/laptjavac/
@@ -474,7 +476,8 @@
 --suppress-fragment https://groups.google.com/forum/#!overview
 --suppress-fragment https://homes.cs.washington.edu/~mernst/pubs/pluggable-checkers-icse2011.pdf#page=3
 --suppress-fragment https://htmlpreview.github.io/?https://bitbucket.org/typetools/jsr308-langtools/raw/tip/doc/README-jsr308.html#reporting-bugs
---suppress-fragment https://www.mercurial-scm.org/wiki/FAQ#FAQ.2FCommonProblems.Why_won.27t_Mercurial_let_me_merge_when_I_have_uncommitted_changes.3F  
+--suppress-fragment https://www.gnu.org/software/texinfo/manual/texinfo/texinfo.html#Marking-Text
+--suppress-fragment https://www.mercurial-scm.org/wiki/FAQ#FAQ.2FCommonProblems.Why_won.27t_Mercurial_let_me_merge_when_I_have_uncommitted_changes.3F
 
 # This next group of suppress-fragments are required because makeinfo does the
 # chapter splits using indirect references through stub files.
