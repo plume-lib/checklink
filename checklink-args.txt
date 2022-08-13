@@ -34,6 +34,7 @@
 --exclude-docs http://plse.cs.washington.edu/staging-daikon/history
 
 --suppress-broken 100:https://www.mercurial-scm.org/wiki/FAQ
+--suppress-broken 100:https://wills.co.tt/
 
 # --suppress-broken -1:http://whereis.mit.edu/map-jpg?selection=32&Buildings=go
 --suppress-broken 301:MAY-NEED-TO-ALSO-LIST-IN-suppress-redirect-CLAUSE
@@ -367,6 +368,7 @@
 --suppress-broken 500:https://www.cercs.gatech.edu/www.cercs.gatech.edu/tech-reports/tr2005/git-cercs-05-10.pdf
 --suppress-broken 500:https://www.chiark.greenend.org.uk/~sgtatham/bugs.html
 --suppress-broken 500:https://www.cs.nmsu.edu/~jcook/woda2003/
+--suppress-broken 500:https://www.cs.princeton.edu/~dpw/popl/05/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/laptjavac/
 --suppress-broken 500:https://www.cs.rice.edu/~mgricken/research/xajavac/
 --suppress-broken 500:https://www.cs.rutgers.edu/~vinodg/papers/tdsc2011/tdsc2011.pdf
