@@ -394,6 +394,7 @@
 --suppress-broken 500:https://www.enthought.com/accounts/register/?next=/licenses/academic
 --suppress-broken 500:https://www.fim.uni-passau.de/lehrstuhl-fuer-software-engineering-ii/
 --suppress-broken 500:https://www.gnu.org/software/texinfo/manual/texinfo/texinfo.html
+--suppress-broken 500:https://www.gnu.org/software/units/
 --suppress-broken 500:https://www.iandrosos.me/
 --suppress-broken 500:https://www.inf.usi.ch/carzaniga/
 --suppress-broken 500:https://www.inf.usi.ch/faculty/pezze/
