@@ -7,6 +7,7 @@ http://search.cpan.org/dist/W3C-LinkChecker/
 or https://github.com/w3c/link-checker .  To do so, run these commands:
   mv checklink checklink-local
   wget https://raw.githubusercontent.com/w3c/link-checker/master/bin/checklink
+  chmod ogu+x checklink
   patch -p7 < checklink-upstream.diff
 Also perhaps update the diff file in this repository.
 
