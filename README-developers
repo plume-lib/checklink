@@ -2,9 +2,10 @@ Maintenance
 
 Here are some instructions about maintaining this package.
 
-Periodically update the base version of `checklink` from
-http://search.cpan.org/dist/W3C-LinkChecker/
-or https://github.com/w3c/link-checker .  To do so, run these commands:
+Periodically update the base version of `checklink` from one of these URLs:
+  http://search.cpan.org/dist/W3C-LinkChecker/
+  https://github.com/w3c/link-checker
+To do so, run these commands:
   mv checklink checklink-local
   wget https://raw.githubusercontent.com/w3c/link-checker/master/bin/checklink
   chmod ogu+x checklink
