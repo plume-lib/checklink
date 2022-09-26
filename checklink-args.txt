@@ -224,6 +224,7 @@
 # End of 500 special cases
 
 ## General 500 section
+--suppress-broken 500:https://savannah.nongnu.org/projects/dtrt-indent/
 --suppress-broken 500:http://cgi.di.uoa.gr/~mema/courses/m131/reviews.pdf
 --suppress-broken 500:http://clang.llvm.org/docs/ThreadSafetyAnalysis.html
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
