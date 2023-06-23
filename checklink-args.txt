@@ -514,6 +514,7 @@
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Dataflow-hierarchy.html#Dataflow-hierarchy
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Declaration-version.html#Declaration-version
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Declarations.html#Declarations
+--suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Front-ends-_0028instrumentation_0029.html#Front-ends-_0028instrumentation_0029
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/Instrumenting-C-programs.html#Instrumenting-C-programs
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/ListImplementors-declaration.html#ListImplementors-declaration
 --suppress-fragment http://plse.cs.washington.edu/daikon/download/doc/developer/New-formatting-for-invariants.html#New-formatting-for-invariants
@@ -546,6 +547,7 @@
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Dataflow-hierarchy.html#Dataflow-hierarchy
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Declaration-version.html#Declaration-version
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Declarations.html#Declarations
+--suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Front-ends-_0028instrumentation_0029.html#Front-ends-_0028instrumentation_0029
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/Instrumenting-C-programs.html#Instrumenting-C-programs
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/ListImplementors-declaration.html#ListImplementors-declaration
 --suppress-fragment http://plse.cs.washington.edu/staging-daikon/download/doc/developer/New-formatting-for-invariants.html#New-formatting-for-invariants
