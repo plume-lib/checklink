@@ -74,7 +74,7 @@
 --suppress-broken 302:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/nl-pl.pdf
 --suppress-broken 302:https://courses.cs.washington.edu/courses/cse490e1/17wi/uwnetid/tellina.pdf
 --suppress-broken 302:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
---suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.3.1/randoop-4.3.1.zip
+--suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.3.3/randoop-4.3.3.zip
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 302:https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8255774
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
@@ -130,7 +130,7 @@
 --suppress-broken 403:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
 --suppress-broken 403:https://eng.uber.com/jvm-profiler/
 --suppress-broken 403:https://galois.com/team/joe-kiniry/
---suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.3.1/randoop-4.3.1.zip
+--suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.3.1/randoop-4.3.3.zip
 --suppress-broken 403:https://gradle.org/
 --suppress-broken 403:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 403:https://javaparser.org/
@@ -159,7 +159,7 @@
 --suppress-broken 404:https://dev.azure.com/
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=1&branchName=master
 --suppress-broken 404:https://dev.azure.com/mernstdaikon/daikon/_build/latest?definitionId=2&branchName=master
---suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.3.1/randoop-4.3.1.zip
+--suppress-broken 404:https://github.com/randoop/randoop/releases/download/v4.3.1/randoop-4.3.3.zip
 --suppress-broken 404:https://search.maven.org/search?q=a:checker-compat-qual
 --suppress-broken 404:https://search.maven.org/search?q=g:org.checkerframework
 --suppress-broken 404:https://search.maven.org/search?q=org.checkerframework
