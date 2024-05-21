@@ -3,8 +3,8 @@ all: python-style test
 PYTHON_FILES=../checklink-persistent-errors
 
 python-style:
-	black ${PYTHON_FILES}
-	pylint -f parseable --disable=W,line-too-long,invalid-name ${PYTHON_FILES}
+	ruff format ${PYTHON_FILES}
+	ruff check ${PYTHON_FILES} --fix
 
 test: errors1.output errors2.output
 	diff errors1.output-goal errors1.output
