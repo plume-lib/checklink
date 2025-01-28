@@ -77,6 +77,8 @@
 --suppress-broken 302:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
 --suppress-broken 302:https://github.com/randoop/randoop/releases/download/v4.3.3/randoop-4.3.3.zip
 --suppress-broken 302:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
+--suppress-broken 302:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=5010248
+--suppress-broken 302:https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=588521
 --suppress-broken 302:https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8255774
 --suppress-broken 302:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 302:https://ugradnews.cs.washington.edu/category/research/
@@ -254,7 +256,7 @@
 --suppress-broken 500:http://www.selenic.com/hg/help/merge-tools
 --suppress-broken 500:http://www.selenic.com/mercurial/hgrc.5.html
 --suppress-broken 500:http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd
---suppress-broken 500:https://2016.splashcon.org/track/splash-2016-oopsla     
+--suppress-broken 500:https://2016.splashcon.org/track/splash-2016-oopsla
 --suppress-broken 500:https://ant.apache.org/
 --suppress-broken 500:https://api.travis-ci.org/randoop/randoop.svg?branch=master
 --suppress-broken 500:https://asm.ow2.io/
@@ -286,7 +288,7 @@
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/inference/
 --suppress-broken 500:https://ece.uwaterloo.ca/~wdietl/ownership/
 --suppress-broken 500:https://ecoop08.cs.ucy.ac.cy/
---suppress-broken 500:https://elpa.gnu.org/   
+--suppress-broken 500:https://elpa.gnu.org/
 --suppress-broken 500:https://en.wikibooks.org/wiki/F_Sharp_Programming/Units_of_Measure
 --suppress-broken 500:https://en.wikipedia.org/wiki/Comma-separated_values
 --suppress-broken 500:https://en.wikipedia.org/wiki/Covariance_and_contravariance_(computer_science)
@@ -304,7 +306,7 @@
 --suppress-broken 500:https://fbinfer.com/
 --suppress-broken 500:https://fbinfer.com/docs/next/checker-eradicate/
 --suppress-broken 500:https://gnuvola.org/software/edb/
---suppress-broken 500:https://gnuvola.org/software/edb/       
+--suppress-broken 500:https://gnuvola.org/software/edb/
 --suppress-broken 500:https://groups.csail.mit.edu/pag/cert/
 --suppress-broken 500:https://groups.inf.ed.ac.uk/cup/comment-locator/
 --suppress-broken 500:https://hkn.mit.edu/
@@ -323,7 +325,7 @@
 --suppress-broken 500:https://link.springer.com/chapter/10.1007/978-3-642-16612-9_1
 --suppress-broken 500:https://manu.sridharan.net/
 --suppress-broken 500:https://maven.apache.org/
---suppress-broken 500:https://melpa.org/     
+--suppress-broken 500:https://melpa.org/
 --suppress-broken 500:https://mercurial-scm.org/
 --suppress-broken 500:https://mir.cs.illinois.edu/~marinov/
 --suppress-broken 500:https://muse.engineering.illinois.edu/files/2017/08/10-Salient-Practices-for-UG-Research-Mentors.pdf
@@ -359,7 +361,7 @@
 --suppress-broken 500:https://user.it.uu.se/~johos902/
 --suppress-broken 500:https://users.elis.ugent.be/aadebug2003/
 --suppress-broken 500:https://users.elis.ugent.be/~brdsutte/
---suppress-broken 500:https://uwaterloo.ca/electrical-computer-engineering/   
+--suppress-broken 500:https://uwaterloo.ca/electrical-computer-engineering/
 --suppress-broken 500:https://valgrind.org/
 --suppress-broken 500:https://valgrind.org/downloads/current.html
 --suppress-broken 500:https://vegofwa.org/
@@ -417,10 +419,10 @@
 --suppress-broken 500:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 500:https://www.portlandjugglers.org/
 --suppress-broken 500:https://www.scientificamerican.com/
---suppress-broken 500:https://www.se.cs.uni-saarland.de/conferences/ASE/ase2005/index.html   
---suppress-broken 500:https://www.se.cs.uni-saarland.de/conferences/ASE/ase2006/index.html   
+--suppress-broken 500:https://www.se.cs.uni-saarland.de/conferences/ASE/ase2005/index.html
+--suppress-broken 500:https://www.se.cs.uni-saarland.de/conferences/ASE/ase2006/index.html
 --suppress-broken 500:https://www.seattleweekly.com/
---suppress-broken 500:https://www.st.cs.uni-saarland.de/paste/       
+--suppress-broken 500:https://www.st.cs.uni-saarland.de/paste/
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/publications/files/schuler-issta-2009.pdf
 --suppress-broken 500:https://www.st.cs.uni-saarland.de/zeller/
 --suppress-broken 500:https://www.valgrind.org/
