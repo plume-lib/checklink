@@ -3,7 +3,7 @@ jobs:
   build:
 
     docker:
-      - image: circleci/python:3.11
+      - image: circleci/python:3.10
 
     steps:
 
