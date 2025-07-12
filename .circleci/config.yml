@@ -19,11 +19,13 @@ jobs:
             - ".git"
 
       - run:
-          apt update
-          apt install pipx
-          pipx ensurepath
-          pip install ruff
-          pipx install mypy
+          name: install dependencies
+          command: |
+            apt update
+            apt install pipx
+            pipx ensurepath
+            pip install ruff
+            pipx install mypy
 
       - run: make -C tests
 
