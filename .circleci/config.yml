@@ -19,7 +19,9 @@ jobs:
             - ".git"
 
       - run:
-          pip install pipx
+          apt update
+          apt install pipx
+          pipx ensurepath
           pip install ruff
           pipx install mypy
 
