@@ -3,7 +3,7 @@ jobs:
   build:
 
     docker:
-      - image: circleci/python:3.10
+      - image: cimg/python:3.13
 
     steps:
 
@@ -18,7 +18,11 @@ jobs:
           paths:
             - ".git"
 
-      - run: pip install ruff
+      - run:
+          name: install dependencies
+          command: |
+            pip install ruff
+            pipx install mypy
 
       - run: make -C tests
 
