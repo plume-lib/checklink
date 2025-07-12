@@ -20,6 +20,8 @@ jobs:
 
       - run: pip install ruff
 
+      - run: pipx install mypy
+
       - run: make -C tests
 
 workflows:

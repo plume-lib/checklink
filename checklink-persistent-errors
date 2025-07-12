@@ -27,6 +27,7 @@ import glob
 import os
 import re
 import sys
+from typing import Any, Generator, TextIO
 
 # For debugging
 # import pprint
@@ -41,14 +42,14 @@ DEBUG_INTERSECTION = False
 # DEBUG_INTERSECTION = True
 
 
-def nonesorter(a):
+def nonesorter(a: Any) -> Any:
     """Maps None to the empty string, for sorting."""
     if not a:
         return ""
     return a
 
 
-def main():
+def main() -> None:
     """Main routine for checklink-persistent-errors.
     Takes 2 arguments, a basename and a number of files to read."""
 
@@ -100,11 +101,11 @@ def main():
                 print(report)
 
 
-def paragraphs(fileobj, separator="\n"):
+def paragraphs(fileobj: TextIO, separator: str = "\n") -> Generator[str]:
     """Yield each paragraph from fileobj, one by one."""
     if separator[-1:] != "\n":
         separator += "\n"
-    paragraph = []
+    paragraph: list[str] = []
     for line in fileobj:
         if line == separator:
             if paragraph:
@@ -120,10 +121,12 @@ LISTOF1 = "\nList of broken links and other issues:\n"
 LISTOF2 = "\nList of redirects\n"
 
 
-def parse_checklink_output_file(checklink_output_file):
+def parse_checklink_output_file(
+    checklink_output_file: str,
+) -> dict[str | None, list[str]]:
     "Returns a map from URLs to list of problem reports for the URL"
     debug_print(DEBUG_PARSING, f"parse_checklink_output_file({checklink_output_file})")
-    result = {}
+    result: dict[str | None, list[str]] = {}
     url = None
     with open(checklink_output_file, "r") as file:
         for para in file.read().split("\n\n"):  # paragraphs
@@ -164,7 +167,7 @@ def parse_checklink_output_file(checklink_output_file):
     return result
 
 
-def debug_print(boolean, string):
+def debug_print(boolean: bool, string: str) -> None:
     """Print the string if the first argument is True."""
     if boolean:
         print(string)
