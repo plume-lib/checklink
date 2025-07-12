@@ -1,6 +1,6 @@
 all: python-style test
 
-PYTHON_FILES=../checklink-persistent-errors
+PYTHON_FILES:=../checklink-persistent-errors
 
 python-style:
 	ruff format ${PYTHON_FILES}
