@@ -22,8 +22,8 @@ jobs:
           name: install dependencies
           command: |
             sudo apt update
-            sudo apt install pip
-            sudo apt install pipx
+            sudo apt install python3-pip
+            sudo apt install python3-pipx
             pipx ensurepath
             pip install ruff
             pipx install mypy
