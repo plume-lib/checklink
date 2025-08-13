@@ -1,21 +1,17 @@
 all: python-style-check python-typecheck test
 
 PYTHON_FILES:=../checklink-persistent-errors
-install-mypy:
-	@if ! command -v mypy ; then pip install mypy ; fi
-install-ruff:
-	@if ! command -v ruff ; then pipx install ruff ; fi
-python-style-fix: install-ruff
+python-style-fix:
 ifneq (${PYTHON_FILES},)
 	@ruff format ${PYTHON_FILES}
 	@ruff -q check ${PYTHON_FILES} --fix
 endif
-python-style-check: install-ruff
+python-style-check:
 ifneq (${PYTHON_FILES},)
 	@ruff -q format --check ${PYTHON_FILES}
 	@ruff -q check ${PYTHON_FILES}
 endif
-python-typecheck: install-mypy
+python-typecheck:
 ifneq (${PYTHON_FILES},)
 	@mypy --strict --install-types --non-interactive ${PYTHON_FILES} > /dev/null 2>&1 || true
 	mypy --strict --ignore-missing-imports ${PYTHON_FILES}
