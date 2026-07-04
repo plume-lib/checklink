@@ -140,12 +140,16 @@
 --suppress-broken 403:https://javaparser.org/
 --suppress-broken 403:https://jet.com/
 --suppress-broken 403:https://norfolk.cs.washington.edu/mycse
+--suppress-broken 403:https://search.maven.org/search?q=g:org.checkerframework
 --suppress-broken 403:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 403:https://wiki.gnome.org/Apps/Dia
 --suppress-broken 403:https://www.addresses.com/phone
 --suppress-broken 403:https://www.congress.gov/
 --suppress-broken 403:https://www.dwheeler.com/sloccount/
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
+# This is checklink's interpretation of a relative URL that only works from a local clone.
+--suppress-broken 404:https://checkerframework.org/manual/release/README-release-process.html
+# General 404 section
 --suppress-broken 404:http://parks.state.wa.us/459/Blewett-I-90
 --suppress-broken 404:http://plumelib.org/bcel-util/api/resources/fonts/dejavu.css
 --suppress-broken 404:http://plumelib.org/lookup/api/resources/fonts/dejavu.css
@@ -451,15 +455,8 @@
 --suppress-broken 503:https://www.microsoft.com/mspress/books/770.aspx
 --suppress-broken 503:https://www.orbitz.com/
 
-# Some --suppress-fragment are due to a bug in Javadoc: it assumes that the superclass defines a method, but the superclass might itself inherit it.
-
---suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.checkerframework%22
---suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Corg.checkerframework
---suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Crandoop
---suppress-fragment http://www.washington.edu/maps/#!/cdh
---suppress-fragment http://www.washington.edu/maps/#!/low
---suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=124498177728201
---suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&appId=124498177728201
+# These --suppress-fragment are due to a bug in Javadoc: it assumes that the superclass defines a method, but the superclass might itself inherit the method.
+# An example is https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/AbstractCollection.html#size() .
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#equals(java.lang.Object)
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#hashCode()
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#replaceAll(java.util.function.UnaryOperator)
@@ -471,6 +468,19 @@
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#getName()
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toString()
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.compiler/javax/tools/SimpleJavaFileObject.html#toUri()
+--suppress-fragment https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/IllegalFormatConversionException.html#getMessage()
+--suppress-fragment https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/MissingFormatArgumentException.html#getMessage()
+--suppress-fragment https://docs.oracle.com/en/java/javase/21/docs/api/java.compiler/javax/annotation/processing/AbstractProcessor.html#process(java.util.Set,javax.annotation.processing.RoundEnvironment)
+--suppress-fragment https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/AbstractCollection.html#size()
+
+# General --suppress-fragment section
+--suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22org.checkerframework%22
+--suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Corg.checkerframework
+--suppress-fragment http://search.maven.org/#search%7Cga%7C1%7Crandoop
+--suppress-fragment http://www.washington.edu/maps/#!/cdh
+--suppress-fragment http://www.washington.edu/maps/#!/low
+--suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&amp;appId=124498177728201
+--suppress-fragment https://connect.facebook.net/en_US/all.js#xfbml=1&appId=124498177728201
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.2
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.2.1
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.2
