@@ -115,6 +115,7 @@
 --suppress-broken 403:https://www.cs.washington.edu/internal/
 --suppress-broken 403:https://www.cs.washington.edu/lab/local/course-resources/cubist/
 --suppress-broken 403:https://www.cs.washington.edu/login/pc
+
 # General 403 section
 --suppress-broken 403:http://gradle.org/
 --suppress-broken 403:http://metro.kingcounty.gov/schedules/
@@ -131,8 +132,11 @@
 --suppress-broken 403:http://www.topcoder.com/
 --suppress-broken 403:https://bitbucket.org/typetools/jsr308-langtools/wiki/AnnotationsOnStatements
 --suppress-broken 403:https://courses.cs.washington.edu/courses/cse599e1/16au/csenetid/books/experimentation-in-software-engineering-2012.pdf
+--suppress-broken 403:https://cra.org/resources/best-practice-memos/evaluating-computer-scientists-and-engineers-for-promotion-and-tenure/
+--suppress-broken 403:https://cra.org/wp-content/uploads/2025/07/Unique-Considerations-for-Evaluating-Computing-Researchers.pdf
 --suppress-broken 403:https://docs.google.com/forms/d/11BCmKDp8COpHZED4D6-5B9KHS0M7RXl553UbaihflmY
 --suppress-broken 403:https://eng.uber.com/jvm-profiler/
+--suppress-broken 403:https://everout.com/seattle/events/?category=performance
 --suppress-broken 403:https://galois.com/team/joe-kiniry/
 --suppress-broken 403:https://github.com/randoop/randoop/releases/download/v4.3.1/randoop-4.3.3.zip
 --suppress-broken 403:https://gradle.org/
@@ -147,8 +151,13 @@
 --suppress-broken 403:https://www.congress.gov/
 --suppress-broken 403:https://www.dwheeler.com/sloccount/
 --suppress-broken 403:https://www.mercurial-scm.org/wiki/NotifyExtension
+--suppress-broken 403:https://www.seattle.gov/transportation/projects-and-programs/programs/bike-program/bike-web-map
+--suppress-broken 403:https://www.seattletimes.com/
+
+
 # This is checklink's interpretation of a relative URL that only works from a local clone.
 --suppress-broken 404:https://checkerframework.org/manual/release/README-release-process.html
+
 # General 404 section
 --suppress-broken 404:http://parks.state.wa.us/459/Blewett-I-90
 --suppress-broken 404:http://plumelib.org/bcel-util/api/resources/fonts/dejavu.css
@@ -181,6 +190,7 @@
 --suppress-broken 404:https://www.nytimes.com/section/todayspaper
 --suppress-broken 404:https://www.pm.inf.ethz.ch/people/personal/pmueller-pers.html
 --suppress-broken 404:https://youtrack.jetbrains.com/issue/IDEA-159286
+
 --suppress-broken 405:http://aws.amazon.com/datasets
 --suppress-broken 405:http://billthies.net/
 --suppress-broken 405:http://code.activestate.com/recipes/langs/python/
@@ -195,6 +205,7 @@
 --suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.daikon?branchName=master
 --suppress-broken 405:https://dev.azure.com/mernstdaikon/daikon/_apis/build/status/codespecs.fjalar?branchName=master
 --suppress-broken 405:https://dev.azure.com/mernstrandoop/randoop/_apis/build/status/randoop.randoop?branchName=master
+--suppress-broken 405:https://leg.wa.gov/
 --suppress-broken 405:https://www.linkedin.com/in/albertogoffi/
 --suppress-broken 405:https://www.linkedin.com/in/bentribelhorn/
 --suppress-broken 405:https://www.linkedin.com/in/calvinloncaric
@@ -205,9 +216,11 @@
 --suppress-broken 405:https://www.linkedin.com/in/kevinmvu/
 --suppress-broken 405:https://www.linkedin.com/in/kjayaram/
 --suppress-broken 405:https://www.linkedin.com/in/manos-renieris-99b5531
+--suppress-broken 405:https://www.linkedin.com/in/sebastianporst
 --suppress-broken 405:https://www.linkedin.com/in/serdar-tasiran-7841087/
 --suppress-broken 405:https://www.linkedin.com/in/steve-anton-944aa36b
 --suppress-broken 405:https://www.linkedin.com/in/suzanne-millstein-a3770956/
+
 --suppress-broken 406:http://kevinjsullivan.org/
 --suppress-broken 406:http://spinroot.com/spin/Workshops/ws03/GroceVisser.pdf
 --suppress-broken 406:http://www.artscrush.org/
@@ -216,8 +229,11 @@
 --suppress-broken 406:http://www.nwfolklife.org/festival/
 --suppress-broken 406:https://archive.siam.org/meetings/alice03/index.htm
 --suppress-broken 406:https://www.nwfolklife.org/festival/
+
 --suppress-broken 409:https://tips.seebrock3r.me/annotations-to-support-your-contracts-609ff259d5df
+
 --suppress-broken 412:http://validator.w3.org/check?uri=referer
+
 --suppress-broken 416:http://www.switchboard.com/
 
 ## 500 special cases
@@ -232,7 +248,6 @@
 # End of 500 special cases
 
 ## General 500 section
---suppress-broken 500:https://savannah.nongnu.org/projects/dtrt-indent/
 --suppress-broken 500:http://cgi.di.uoa.gr/~mema/courses/m131/reviews.pdf
 --suppress-broken 500:http://clang.llvm.org/docs/ThreadSafetyAnalysis.html
 --suppress-broken 500:http://fivethirtyeight.blogs.nytimes.com/methodology/
@@ -341,11 +356,15 @@
 --suppress-broken 500:https://pag.csail.mit.edu/pag/
 --suppress-broken 500:https://pavpanchekha.com/
 --suppress-broken 500:https://people.lu.usi.ch/goffia/
+--suppress-broken 500:https://plrg.ics.uci.edu/
+--suppress-broken 500:https://profs.sci.univr.it/~merro/
+--suppress-broken 500:https://profs.sci.univr.it/~spoto/
 --suppress-broken 500:https://projectlombok.org/
 --suppress-broken 500:https://projectlombok.org/features/delombok
 --suppress-broken 500:https://researcher.watson.ibm.com/researcher/view.php?person=us-dolby
 --suppress-broken 500:https://ricken.us/research/laptjavac/
 --suppress-broken 500:https://ricken.us/research/xajavac/
+--suppress-broken 500:https://savannah.nongnu.org/projects/dtrt-indent/
 --suppress-broken 500:https://semver.org/
 --suppress-broken 500:https://shuttleexpress.com/seattle-seatac-airport-transportation/
 --suppress-broken 500:https://shuttleexpress.com/seattle/airport/scheduled-hotel-service-to-seatac/
@@ -433,16 +452,19 @@
 --suppress-broken 500:https://yaml.org/
 --suppress-broken 500:https://youtrack.jetbrains.com/issue/IDEA-159286
 --suppress-broken 500:https://zhen-zhang.com/
+
 --suppress-broken 501:http://www.bizrate.com/
 --suppress-broken 501:https://web.mit.edu/21.guide/www/l-rec-wr.htm
 --suppress-broken 501:https://web.mit.edu/21.guide/www/toc.htm
 --suppress-broken 501:webcal://courses.cs.washington.edu/courses/cse403/16wi/calendar.ics
+
 --suppress-broken 502:http://www.linkedin.com/pub/ittai-balaban/4/213/b85
 --suppress-broken 502:https://homes.cs.washington.edu/~mernst/uw-only/research/potential-research-projects.html
 --suppress-broken 502:https://norfolk.cs.washington.edu/mycse
 --suppress-broken 502:https://ugradnews.cs.washington.edu/category/research/
 --suppress-broken 502:https://www.cs.washington.edu/internal/
 --suppress-broken 502:https://www.linkedin.com/pub/hao-lu/77/41/867
+
 --suppress-broken 503:http://www.census.gov/popest/data/cities/totals/2009/files/SUB-EST2009_ALL.csv
 --suppress-broken 503:http://www.marriott.com/hotels/travel/boscb-boston-marriott
 --suppress-broken 503:http://www.marriott.com/hotels/travel/boscm-residence-inn-boston-cambridge/
@@ -455,7 +477,7 @@
 --suppress-broken 503:https://www.microsoft.com/mspress/books/770.aspx
 --suppress-broken 503:https://www.orbitz.com/
 
-# These --suppress-fragment are due to a bug in Javadoc: it assumes that the superclass defines a method, but the superclass might itself inherit the method.
+# This section of --suppress-fragment is due to a bug in Javadoc: it assumes that the superclass defines a method, but the superclass might itself inherit the method.
 # An example is https://docs.oracle.com/en/java/javase/25/docs/api/java.base/java/util/AbstractCollection.html#size() .
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#equals(java.lang.Object)
 --suppress-fragment https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html#hashCode()
@@ -487,6 +509,7 @@
 --suppress-fragment https://docs.oracle.com/javase/specs/jvms/se11/html/jvms-4.html#jvms-4.3.3
 --suppress-fragment https://docs.travis-ci.com/user/getting-started/#To-get-started-with-Travis-CI%3A
 --suppress-fragment https://github.com/google/google-java-format#using-the-formatter
+--suppress-fragment https://github.com/google/guava/wiki/PrimitivesExplained#unsigned-support
 --suppress-fragment https://github.com/kelloggm/checkerframework-gradle-plugin#incompatibility-with-error-prone
 --suppress-fragment https://github.com/rjust/defects4j#requirements
 --suppress-fragment https://github.com/uber/okbuck/wiki/Using-Error-Prone-with-Buck-and-OkBuck#using-error-prone-javac-on-jdk-8
