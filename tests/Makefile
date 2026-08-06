@@ -1,11 +1,8 @@
 .PHONY: all test clean prek
 all: prek test
 
-PYTHON_FILES:=../checklink-persistent-errors
 prek:
-ifneq (${PYTHON_FILES},)
-	prek -q run ${PYTHON_FILES}
-endif
+	prek -q run --all-files
 
 test: errors1.output errors2.output
 	diff errors1.output-goal errors1.output
