@@ -2,19 +2,19 @@ Processing	http://homes.cs.washington.edu/~mernst/links2.html
 
 
 List of broken links and other issues:
-http://www.seattletimes.com/	
+http://www.seattletimes.com/
   Line: 179
   Code: 403 Forbidden
  To do: The link is forbidden! This needs fixing. Usual suspects: a missing
 	index.html or Overview.html, or a missing ACL.
 
-http://www.darpa.mil/	
+http://www.darpa.mil/
   Line: 89
   Code: 302 -> 403 Forbidden
  To do: The link is forbidden! This needs fixing. Usual suspects: a missing
 	index.html or Overview.html, or a missing ACL.
 
-http://access.wa.gov/	
+http://access.wa.gov/
   Line: 183
   Code: 500 read timeout
  To do: This is a server side problem. Check the URI.
@@ -25,7 +25,7 @@ Processing	http://homes.cs.washington.edu/~mernst/teaching/data-programming/
 
 
 List of broken links and other issues:
-http://www.washington.edu/uaa/advising/general-education-requirements/areas-of-knowledge/	
+http://www.washington.edu/uaa/advising/general-education-requirements/areas-of-knowledge/
   Line: 17
   Code: 500 Server closed connection without sending any data back
  To do: This is a server side problem. Check the URI.
@@ -36,12 +36,12 @@ Processing	http://homes.cs.washington.edu/~mernst/pubs/verify-distsystem-pldi201
 
 
 List of broken links and other issues:
-https://homes.cs.washington.edu/~ztatlock/	
+https://homes.cs.washington.edu/~ztatlock/
   Line: 27
   Code: 500 Can't connect to homes.cs.washington.edu:443
  To do: This is a server side problem. Check the URI.
 
-https://homes.cs.washington.edu/~xi/	
+https://homes.cs.washington.edu/~xi/
   Line: 28
   Code: 500 Can't connect to homes.cs.washington.edu:443
  To do: This is a server side problem. Check the URI.
@@ -51,7 +51,7 @@ https://homes.cs.washington.edu/~xi/
 Processing	http://homes.cs.washington.edu/~mernst/pubs/dependability-case-snapl2015-abstract.html
 
 
-https://homes.cs.washington.edu/~ztatlock/	
+https://homes.cs.washington.edu/~ztatlock/
   Line: 25
   Code: 500 Can't connect to homes.cs.washington.edu:443
  To do: This is a server side problem. Check the URI.
@@ -62,7 +62,7 @@ Processing	http://homes.cs.washington.edu/~mernst/advice/organize-workshop.html
 
 
 List of broken links and other issues:
-https://homes.cs.washington.edu/~djg/	
+https://homes.cs.washington.edu/~djg/
   Line: 14
   Code: 500 Can't connect to homes.cs.washington.edu:443
  To do: This is a server side problem. Check the URI.
@@ -73,7 +73,7 @@ Processing	http://homes.cs.washington.edu/~mernst/advice/career-grant.html
 
 
 List of broken links and other issues:
-http://www.engr.washington.edu/curr_students/studentprogs/wise	
+http://www.engr.washington.edu/curr_students/studentprogs/wise
   Line: 81
   Code: 404 Not Found
  To do: The link is broken. Double-check that you have not made any typo,

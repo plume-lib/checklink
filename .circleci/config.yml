@@ -1,15 +1,11 @@
 version: 2.1
 jobs:
   build:
-
     docker:
       - image: cimg/python:3.13
-
     environment:
       TERM: dumb
-
     steps:
-
       - restore_cache:
           keys:
             - source-v1-{{ .Branch }}-{{ .Revision }}
@@ -20,15 +16,12 @@ jobs:
           key: source-v1-{{ .Branch }}-{{ .Revision }}
           paths:
             - ".git"
-
       - run:
           name: install dependencies
           command: |
             pip install ruff
             pipx install mypy
-
       - run: make -C tests
-
 workflows:
   build:
     jobs:

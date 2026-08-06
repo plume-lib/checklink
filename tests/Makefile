@@ -1,20 +1,10 @@
-all: python-style-check python-typecheck test
+.PHONY: all test clean prek
+all: prek test
 
 PYTHON_FILES:=../checklink-persistent-errors
-python-style-fix:
+prek:
 ifneq (${PYTHON_FILES},)
-	@ruff format ${PYTHON_FILES}
-	@ruff -q check ${PYTHON_FILES} --fix
-endif
-python-style-check:
-ifneq (${PYTHON_FILES},)
-	@ruff -q format --check ${PYTHON_FILES}
-	@ruff -q check ${PYTHON_FILES}
-endif
-python-typecheck:
-ifneq (${PYTHON_FILES},)
-	@mypy --strict --install-types --non-interactive ${PYTHON_FILES} > /dev/null 2>&1 || true
-	mypy --strict --ignore-missing-imports ${PYTHON_FILES}
+	prek -q run ${PYTHON_FILES}
 endif
 
 test: errors1.output errors2.output

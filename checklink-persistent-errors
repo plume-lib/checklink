@@ -128,7 +128,7 @@ def parse_checklink_output_file(
     debug_print(DEBUG_PARSING, f"parse_checklink_output_file({checklink_output_file})")
     result: dict[str | None, list[str]] = {}
     url = None
-    with open(checklink_output_file, "r") as file:
+    with open(checklink_output_file) as file:
         for para in file.read().split("\n\n"):  # paragraphs
             debug_print(DEBUG_PARSING, f"url = {url}, paragraph = <<<{para}>>>")
             if re.match("\n?Processing\t", para):
