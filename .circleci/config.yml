@@ -19,8 +19,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            pip install ruff
-            pipx install mypy
+            curl -fLSs https://circle.ci/cli | bash
       - run: make -C tests
 workflows:
   build:
