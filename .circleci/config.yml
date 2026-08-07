@@ -19,7 +19,8 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            curl -fLSs https://circle.ci/cli | bash
+            curl -1sLf 'https://packages.circleci.com/public/setup.deb.sh' | sudo -E bash
+            sudo apt install circleci
       - run: make -C tests
 workflows:
   build:
