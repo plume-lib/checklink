@@ -21,6 +21,7 @@ jobs:
           command: |
             curl -1sLf 'https://packages.circleci.com/public/setup.deb.sh' | sudo -E bash
             sudo apt install circleci
+            uv tool install prek
       - run: make -C tests
 workflows:
   build:
